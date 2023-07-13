@@ -4,6 +4,7 @@ import "./Home.css";
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import Header from "../Components/Header";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Components/Footer/Footer";
 const Home = () => {
   const navigate = useNavigate();
 
@@ -74,6 +75,7 @@ const Home = () => {
         <img src="../image/expr.png" alt="" className="secImg" />
       </div>
       <Roadmap />
+      <Footer />
     </>
   );
 };

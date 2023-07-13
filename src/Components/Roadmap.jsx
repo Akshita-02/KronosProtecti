@@ -26,12 +26,12 @@ const Roadmap = () => {
   return (
     <>
       <div className="services">
-        <h3>
+        <h1>
           How We Provide <span>Our Services </span>
-        </h3>
+        </h1>
         <p>
           Providing security services involves a range of activities aimed at
-          protecting people, prperty, and assests from potential threatss. Here
+          protecting people, prperty, </p> <p>and assests from potential threatss. Here
           are some general steps to consider when providing securrity services:
         </p>
       </div>
@@ -43,17 +43,6 @@ const Roadmap = () => {
           height="700"
           style={{ color: "blueviolet" }}
         ></canvas>
-      </div>
-      <div class="roadmap-container">
-        <div class="roadmap-item">
-          <img src="image1.jpg" alt="" />
-          <p>Description 1</p>
-        </div>
-        <div class="roadmap-item">
-          <img src="image2.jpg" alt="" />
-          <p>Description 2</p>
-        </div>
-        {/* <!-- Add more roadmap items --> */}
       </div>
     </>
   );

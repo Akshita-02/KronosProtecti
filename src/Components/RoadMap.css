@@ -13,3 +13,18 @@
     position: absolute;
     margin: auto;
 }
+.services h1{
+    font-size: 88px;
+    text-align: center;
+    align-items: center;
+    /* width: 100%; */
+}
+.services h1 span{
+    color: #2fdcff;
+  
+}
+.services p{
+   text-align: center;
+   align-items: center;
+   font-size: 20px;
+}
