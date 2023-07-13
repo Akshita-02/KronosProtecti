@@ -1,0 +1,39 @@
+.home-content {
+    width: 40vw;
+    position: relative;
+    margin-top: -600px;
+    float: right;
+    /* background-color: #2d2727; */
+    background-blend-mode: lighten;
+
+}
+.home-content p{
+    margin: 20px;
+    padding: 10px;
+}
+.home-content span{
+    color: rgb(108, 135, 226);
+}
+.home-content h1{
+    font-family: 'timesNewRoman';
+    font-size: 3rem;
+    /* text-align: center; */
+    align-items: center;
+    font-weight:bold;
+}
+.home-content p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.slider-section{
+    background-color: #000;
+    opacity: 0.3;
+}
+.btn{
+    border: 2px solid  #2fdcff;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: #2fdcff;
+    color:white;
+}
