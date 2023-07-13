@@ -1,10 +1,11 @@
 import React from "react";
-import Roadmap from '../Components/Roadmap'
+import Roadmap from "../Components/Roadmap";
 import "./Home.css";
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import Header from "../Components/Header";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
+import VideoSec from "../Components/videoSec/VideoSec";
 const Home = () => {
   const navigate = useNavigate();
 
@@ -75,6 +76,7 @@ const Home = () => {
         <img src="../image/expr.png" alt="" className="secImg" />
       </div>
       <Roadmap />
+      <VideoSec />
       <Footer />
     </>
   );
