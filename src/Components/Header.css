@@ -18,7 +18,7 @@
 }
 
 .header-top span {
-    color: rgb(108, 135, 226);
+    color: #2fdcff;
 }
 
 .header-top h1 {
@@ -39,7 +39,7 @@
     display: flex;
     list-style: none;
     margin: 2rem;
-    border: 2px solid rgb(56, 105, 191);
+    border: 2px solid #24CCCE;
     border-radius:8px;
     padding: 5px;
     font-weight:400;
@@ -48,6 +48,7 @@
 .header-bottom ul li a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 .header-bottom ul li a.active {
     color: green;
@@ -59,7 +60,4 @@
 .header-bottom ul li:hover{
     background-color: rgb(81, 101, 230);
     cursor: pointer;
-}
-.header-bottom ul li i{
-   margin: 5px;
 }

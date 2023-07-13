@@ -1,0 +1,15 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top:100px;
+}
+#mycanvas{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+}

@@ -16,7 +16,7 @@ const Header = () => {
             </h1>
           </div>
         </div>
-        <div className="header-bottom" id="myDiv">
+        <div className="header-bottom isActive" id="myDiv">
         <ul>
           <li>
             <NavLink exact to="/" ClassName="{({ isActive }) =>(isActive ? 'active' : 'inactive')}">

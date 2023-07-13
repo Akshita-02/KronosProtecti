@@ -6,35 +6,55 @@
     /* background-color: #2d2727; */
     background-blend-mode: lighten;
 
+
 }
-.home-content p{
+
+.home-content p {
     margin: 20px;
     padding: 10px;
 }
-.home-content span{
-    color: rgb(108, 135, 226);
+
+.home-content span {
+    color: #2fdcff;
 }
-.home-content h1{
+
+.home-content h1 {
     font-family: 'timesNewRoman';
     font-size: 3rem;
     /* text-align: center; */
     align-items: center;
-    font-weight:bold;
+    font-weight: bold;
 }
-.home-content p{
+
+.home-content p {
     font-size: 1rem;
     font-weight: 600;
 }
-.slider-section{
-    background-color: #000;
+
+.slider-section {
+    background-color: #000 !important;
     opacity: 0.3;
 }
-.btn{
-    border: 2px solid  #2fdcff;
+
+.btn {
+    border: 2px solid #2fdcff;
     font-size: 20px;
     margin: 10px;
+    height: 50px;
     border-radius: 50px;
     background-color: #2fdcff;
-    color:white;
+    color: white;
     cursor: pointer;
+}
+
+.secImg {
+    background-image: url('../../public/image/expr.png');
+    background-size: cover;
+    width: 100vw;
+
+}
+
+.expreince {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(52deg, rgba(2, 0, 36, 1) 59%, rgba(9, 9, 121, 1) 76%, rgba(0, 212, 255, 1) 100%);
 }

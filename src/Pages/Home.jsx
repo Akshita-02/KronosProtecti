@@ -1,9 +1,9 @@
 import React from "react";
+import Roadmap from '../Components/Roadmap'
 import "./Home.css";
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import Header from "../Components/Header";
 import { useNavigate } from "react-router-dom";
-
 const Home = () => {
   const navigate = useNavigate();
 
@@ -64,9 +64,16 @@ const Home = () => {
             odit aut dolor inventore, fugit ipsam consectetur! Hic minus et
             doloribus ab saepe sequi nobis explicabo veniam ducimus possimus!
           </p>
-          <button className="btn" onClick={handleContactClick}>Contact Us</button>
+          <button className="btn" onClick={handleContactClick}>
+            Contact Us
+          </button>
         </div>
       </div>
+
+      <div className="expreince">
+        <img src="../image/expr.png" alt="" className="secImg" />
+      </div>
+      <Roadmap />
     </>
   );
 };
