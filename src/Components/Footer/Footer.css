@@ -1,0 +1,123 @@
+.footer {
+    background-color: rgb(23, 100, 124);
+    width: 100vw;
+}
+
+.main-footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-logo img {
+    width: 30%;
+    height: auto;
+}
+
+/* Create the lines */
+.perpendicular-line {
+    width: 1px;
+    height: 90px;
+    background-color: #fdf8f8;
+    margin-top: -80px;
+}
+
+.line-left {
+    width: 35%;
+    height: 1px;
+    background-color: #fdf8f8;
+    margin-left: -50vw;
+    margin-top: -36px;
+    position: absolute;
+
+}
+
+.line-right {
+    width: 35%;
+    height: 1px;
+    background-color: #fdf8f8;
+    margin-right: -48vw;
+    margin-top: -36px;
+    position: absolute;
+
+}
+
+.social-contact-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-contact-left {
+    font-size: 33px;
+}
+.social-contact-middke {
+   justify-content: center;
+   align-items: center;
+   margin-left: 5px;
+   font-size: 33px;
+}
+.social-contact-middke i {
+ margin:15px ;
+}
+.social-contact-middke i:hover {
+ font-size: 40px;
+ transition: 02s ease;
+ cursor: pointer;
+ color: rgb(12, 58, 118);
+}
+
+.social-contact-right {
+    margin:15px ;
+    font-size: 33px;
+}
+
+/* Media Queries */
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .footer-logo img {
+        width: 50%;
+    }
+
+    .line-left,
+    .line-right {
+        display: none;
+    }
+
+    .social-contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-contact-middke {
+        margin-top: 10px;
+    }
+}
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .footer-logo img {
+        width: 40%;
+    }
+
+    .line-left,
+    .line-right {
+        display: none;
+    }
+
+    .social-contact-middke {
+        margin-left: 0;
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+    /* No additional changes for large screens */
+}

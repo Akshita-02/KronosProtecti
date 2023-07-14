@@ -58,3 +58,50 @@
     background: rgb(2, 0, 36);
     background: linear-gradient(52deg, rgba(2, 0, 36, 1) 59%, rgba(9, 9, 121, 1) 76%, rgba(0, 212, 255, 1) 100%);
 }
+/* Media Queries */
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .home-content {
+        width: 90vw;
+        margin-top: -200px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .home-content {
+        width: 60vw;
+        margin-top: -400px;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 18px;
+        height: 45px;
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+}
