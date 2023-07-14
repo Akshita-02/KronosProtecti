@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/home";
-import ContactUs from "./Pages/contact";
-import Service from "./Pages/service";
+ import ContactUs from "./Pages/contact";
+
 import PageNotFound from "./Pages/error";
-// import Header from "./Components/Header";
+ import Header from "./Components/Header";
 import AboutUs from "./Pages/about";
-import Header from "./Components/Header";
+
+import Service from "./Pages/Service";
+
 import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
