@@ -2,9 +2,7 @@ import React from "react";
 import Roadmap from "../Components/Roadmap";
 import "./Home.css";
 import ImageSlider, { Slide } from "react-auto-image-slider";
-import Header from "../Components/Header";
 import { useNavigate } from "react-router-dom";
-import Footer from "../Components/Footer/Footer";
 import VideoSec from "../Components/videoSec/VideoSec";
 const Home = () => {
   const navigate = useNavigate();
@@ -14,7 +12,6 @@ const Home = () => {
   };
   return (
     <>
-      <Header />
       <div className="home-container-section">
         <div className="slider-section">
           <ImageSlider
@@ -77,7 +74,6 @@ const Home = () => {
       </div>
       <Roadmap />
       <VideoSec />
-      <Footer />
     </>
   );
 };
