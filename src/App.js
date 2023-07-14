@@ -4,13 +4,14 @@ import Home from "./Pages/Home";
 import ContactUs from "./Pages/ContactUs";
 import Service from "./Pages/Service";
 import PageNotFound from "./Pages/PageNotFound";
-// import Header from "./Components/Header";
+import Header from "./Components/Header";
 import AboutUs from "./Pages/AboutUs";
+import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/contact" element={<ContactUs />} exact />
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} exact />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
