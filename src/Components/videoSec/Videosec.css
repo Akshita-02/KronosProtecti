@@ -1,5 +1,5 @@
 .video-sec{
-background-image: url('../../../src/assets/videobg.png') !important;
+/* background-image: url('../../../src/assets/videobg.png') !important; */
 background-repeat: no-repeat;
 background-size: 100vw;
 height: 100vh;
@@ -15,4 +15,33 @@ video{
 }
 h1{
     text-align: center;
+}
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .video-sec {
+        background-size: cover;
+    }
+
+    video {
+        margin-left: 5vw;
+        margin-top: 100px;
+        height: 250px;
+    }
+}
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .video-sec {
+        background-size: cover;
+    }
+
+    video {
+        margin-left: 10vw;
+        margin-top: 150px;
+        height: 300px;
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
 }

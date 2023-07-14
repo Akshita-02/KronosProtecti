@@ -1,30 +1,214 @@
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding-top:100px;
+    padding-top: 100px;
 }
-#mycanvas{
+
+#mycanvas {
     width: 85%;
     height: 100%;
     position: absolute;
     margin: auto;
 }
-.services h1{
+
+.services h1 {
     font-size: 88px;
     text-align: center;
     align-items: center;
     /* width: 100%; */
 }
-.services h1 span{
+
+.services h1 span {
     color: #2fdcff;
-  
+
 }
-.services p{
-   text-align: center;
-   align-items: center;
-   font-size: 20px;
+
+.services p {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.roadmap-content {
+    position: absolute;
+    display: flex;
+    flex-grow: 3;
+    height: 25px;
+    width: 30px;
+    margin-top: -45rem;
+    margin-left: 18rem;
+}
+
+.roadmap-content img {
+    /* position: absolute; */
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid #2fdcff;
+    border-radius: 23px;
+    /* margin-left: 50px; */
+
+}
+
+.ct-sec-2 img {
+    /* position: absolute; */
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid #2fdcff;
+    border-radius: 23px;
+}
+
+.ct-sec-2 {
+    position: absolute;
+    display: flex;
+    flex-grow: 3;
+    height: 25px;
+    width: 30px;
+    margin-top: -32rem;
+    margin-left: 25rem;
+}
+
+.ct-sec-3 img {
+    /* position: absolute; */
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid #2fdcff;
+    border-radius: 23px;
+    margin: 40px;
+
+}
+
+.ct-sec-3 {
+    position: absolute;
+    display: flex;
+    flex-grow: 3;
+    height: 25px;
+    width: 30px;
+    margin-top: -22rem;
+    margin-left: 25rem;
+}
+
+.ctm p {
+    text-align: center;
+
+}
+
+.ctm {
+    margin-left: 150px;
+}
+
+.ctm img:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+.ct8{
+    margin-top: -28px !important;
+    margin-left: 10px !important;
+}
+
+/* Media Queries */
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 50px;
+    }
+
+    #mycanvas {
+        width: 95%;
+    }
+
+    .services h1 {
+        font-size: 40px;
+    }
+
+    .services p {
+        font-size: 16px;
+    }
+
+    .roadmap-content,
+    .ct-sec-2,
+    .ct-sec-3 {
+        margin-left: 5%;
+    }
+
+    .roadmap-content {
+        margin-top: -52rem;
+
+    }
+    .ct-sec-2{
+        margin-top: -585px;
+    }
+
+    .ct3 {
+        display: none;
+    }
+
+
+    .roadmap-content img,
+    .ct-sec-2 img,
+    .ct-sec-3 img {
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+    }
+
+    .ctm {
+        margin-left: 20px;
+    }
+
+    .ctm p {
+        font-size: 0.7rem;
+    }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding-top: 80px;
+    }
+
+    #mycanvas {
+        width: 90%;
+    }
+
+    .services h1 {
+        font-size: 60px;
+    }
+
+    .services p {
+        font-size: 18px;
+    }
+
+    .roadmap-content,
+    .ct-sec-2,
+    .ct-sec-3 {
+        margin-left: 10%;
+        margin-top: -30rem;
+    }
+
+    .roadmap-content img,
+    .ct-sec-2 img,
+    .ct-sec-3 img {
+        height: 90px;
+        width: 90px;
+        margin: 8px;
+    }
+
+    .ctm {
+        margin-left: 50px;
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+    /* No additional changes for large screens */
 }
