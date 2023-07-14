@@ -1,7 +1,12 @@
-import React from "react";
+import React, {} from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 const Header = () => {
+  // const [isOpen, setIsOpen] = useState(false);
+
+  // const toggleNavbar = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <>
       <div className="header-container">
@@ -15,30 +20,40 @@ const Header = () => {
               <span>KRONOS</span> PROTECTION{" "}
             </h1>
           </div>
+          {/* <div className="hamburger-btn" onClick={toggleNavbar}>
+            <i className="fas fa-bars"></i>
+          </div>
+          <div className="cross-btn" onClick={toggleNavbar}>
+            <i className="fas fa-times"></i>
+          </div> */}
         </div>
-        <div className="header-bottom isActive" id="myDiv">
-        <ul>
-          <li>
-            <NavLink exact to="/" ClassName="{({ isActive }) =>(isActive ? 'active' : 'inactive')}">
-              <i className="fas fa-home"></i> Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/services" ClassName="active-link">
-              <i className="fas fa-gears"></i> Our Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" ClassName="active-link">
-              <i className="fas fa-users"></i> About Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" ClassName="active-link">
-              <i className="fas fa-address-book"></i> Contact Us
-            </NavLink>
-          </li>
-        </ul>
+        <div className="header-bottom" id="myDiv">
+          <ul>
+            <li>
+              <NavLink
+                exact
+                to="/"
+                ClassName="{({ isActive }) =>(isActive ? 'active' : 'inactive')}"
+              >
+                <i className="fas fa-home"></i> Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services" ClassName="active-link">
+                <i className="fas fa-gears"></i> Our Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" ClassName="active-link">
+                <i className="fas fa-users"></i> About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" ClassName="active-link">
+                <i className="fas fa-address-book"></i> Contact Us
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
     </>

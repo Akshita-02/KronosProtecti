@@ -7,11 +7,12 @@ import PageNotFound from "./Pages/error";
 // import Header from "./Components/Header";
 import AboutUs from "./Pages/about";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <>
       <BrowserRouter>
-      <Header/>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/contact" element={<ContactUs />} exact />
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} exact />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
