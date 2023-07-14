@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import ContactUs from "./Pages/ContactUs";
-import Service from "./Pages/Service";
-import PageNotFound from "./Pages/PageNotFound";
+import Home from "./Pages/home";
+import ContactUs from "./Pages/contact";
+import Service from "./Pages/service";
+import PageNotFound from "./Pages/error";
 // import Header from "./Components/Header";
-import AboutUs from "./Pages/AboutUs";
+import AboutUs from "./Pages/about";
+import Header from "./Components/Header";
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        {/* <Header /> */}
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/contact" element={<ContactUs />} exact />
