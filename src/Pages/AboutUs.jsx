@@ -1,13 +1,10 @@
-import React from 'react'
-import Header from '../Components/Header'
-
+import React from "react";
 const AboutUs = () => {
   return (
     <>
-    <Header />
-    <h1> I am from AboutUs </h1>
+      <h1> I am from AboutUs </h1>
     </>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
