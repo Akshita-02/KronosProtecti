@@ -1,0 +1,39 @@
+ .ssh-font h2 span {
+     color: #2fdcff;
+ }
+
+ .ssh-font h2 {
+     font-size: 50px;
+     text-align: center;
+ }
+ .ssh-font p {
+     font-size: 25px;
+     font-weight:500;
+     text-align: center;
+     line-height: 0.1;
+ }
+
+ .service-card h3 {
+     font-size: 28px;
+ }
+
+ .service-card {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .service1,
+ .service2,
+ .service3,
+ .service4,
+ .service5,
+ .service6,
+ .service7,
+ .service8 {
+     width: 20vw;
+     margin: 1vw;
+ }
+ .events-section img{
+    width: 100vw;
+ }

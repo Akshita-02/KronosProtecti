@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 // import ContactUs from "./Pages/ContactUs";
-import Service from "./Pages/Service";
+import Service from "./Pages/Services/Service";
 import PageNotFound from "./Pages/PageNotFound";
 import Header from "./Components/Header";
 // import AboutUs from "./Pages/AboutUs";
