@@ -22,9 +22,12 @@ const Footer = () => {
          <p>   k.security@icloud.com</p>
           </div>
           <div className="social-contact-middke">
+            <div className="social-icon">
+
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-linkedin"></i>
+            </div>
             <p>@kronons_security7</p>
           </div>
           <div className="social-contact-right">

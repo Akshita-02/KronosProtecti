@@ -5,8 +5,6 @@
     float: right;
     /* background-color: #2d2727; */
     background-blend-mode: lighten;
-
-
 }
 
 .home-content p {
@@ -64,7 +62,7 @@
 @media only screen and (max-width: 600px) {
     .home-content {
         width: 90vw;
-        margin-top: -200px;
+        /* margin-top: -200px; */
     }
 
     .home-content h1 {

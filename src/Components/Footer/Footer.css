@@ -89,7 +89,7 @@
 
     .line-left,
     .line-right {
-        display: none;
+        width: 100px;
     }
 
     .social-contact-section {
@@ -99,6 +99,12 @@
 
     .social-contact-middke {
         margin-top: 10px;
+        font-size: 20px;
+    }
+    .social-icon{
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 50px;
     }
 }
 /* For medium screens */
@@ -109,11 +115,15 @@
 
     .line-left,
     .line-right {
-        display: none;
+        width: 100px;
     }
 
     .social-contact-middke {
         margin-left: 0;
+        font-size: 20px;
+    }
+    .social-icon{
+        font-size: 40px;
     }
 }
 

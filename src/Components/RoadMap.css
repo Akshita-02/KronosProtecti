@@ -123,7 +123,7 @@
     }
 
     #mycanvas {
-        width: 95%;
+        width: 80%;
     }
 
     .services h1 {
@@ -137,15 +137,14 @@
     .roadmap-content,
     .ct-sec-2,
     .ct-sec-3 {
-        margin-left: 5%;
+        margin-left: 15%;
     }
 
     .roadmap-content {
-        margin-top: -52rem;
-
+        margin-top: -47rem;
     }
     .ct-sec-2{
-        margin-top: -585px;
+        margin-top: -550px;
     }
 
     .ct3 {
