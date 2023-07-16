@@ -48,7 +48,7 @@
 }
 
 .secImg {
-    background-image: url('../../public/image/expr.png');
+    background-image: url('../../../public/image/expr.png');
     background-size: cover;
     width: 100vw;
 
