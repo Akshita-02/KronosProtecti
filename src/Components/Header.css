@@ -1,3 +1,17 @@
+.website-container{
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+    width: 250px;
+    background-color: #2fdcff;
+    height: 100vh;
+    transform: translateX(-260px);
+}
+.sidebar.open{
+    transform: translateX(0px);
+    flex-direction: column;
+}
 .header-container {
     background-color: black;
     color: white;

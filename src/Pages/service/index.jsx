@@ -1,30 +1,10 @@
 import React from "react";
 import Cta from "../../Components/Cta";
-import './Service.css'
-// import TextCard from "../../Components/TextCard";
-
+import "./Service.css";
 const Service = () => {
   return (
     <>
       <Cta />
-      {/* <TextCard orientation="flex-row-reverse" /> */}
-      <div
-        className="service-section"
-        style={{
-          background: "rgb(9, 8, 27)",
-          // eslint-disable-next-line
-          background:
-            "linear-gradient(45deg, rgba(9, 8, 27, 1) 59%, rgba(9, 9, 121, 1) 75%, rgba(0, 212, 255, 0.5) 100%)",
-        }}
-      >
-        <div className="ssh-font">
-          <h2>
-            Take a Look At <span>Services We Provided</span>
-          </h2>
-          <p>We are to protect with courage & to serve with compassion.</p>
-          <p>We specialize in security and armed bodyguard service.</p>
-        </div>
-        <div className="service-card">
           <div
             className="service-section"
             style={{
@@ -128,8 +108,6 @@ const Service = () => {
           <div className="events-section">
             <img src="../../../image/events.jpeg" alt="" />
           </div>{" "}
-        </div>
-      </div>
       <div className="events-section">
         <img src="../../../image/events.jpeg" alt="" />
       </div>

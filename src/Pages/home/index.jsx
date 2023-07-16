@@ -2,7 +2,6 @@ import React from "react";
 import Roadmap from "../../Components/Roadmap";
 import "./Home.css";
 import VideoSec from "../../Components/videoSec/VideoSec";
-import Footer from "../../Components/Footer/Footer";
 
 import Cta from "../../Components/Cta";
 const Home = () => {
@@ -14,8 +13,7 @@ const Home = () => {
       </div>
       <Roadmap />
       <VideoSec />
-      <Footer />
-    </>
+          </>
   );
 };
 
