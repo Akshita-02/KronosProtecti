@@ -1,20 +1,20 @@
 import React from "react";
-import Roadmap from "../Components/Roadmap";
+import Roadmap from "../../Components/Roadmap";
 import "./Home.css";
-import VideoSec from "../Components/videoSec/VideoSec";
-import Hero from "../Components/Hero/Hero";
+import VideoSec from "../../Components/videoSec/VideoSec";
+import Footer from "../../Components/Footer/Footer";
+
+import Cta from "../../Components/Cta";
 const Home = () => {
   return (
     <>
-      <div className="home-container-section">
-      <Hero />
-      </div>
-      
+      <Cta />
       <div className="expreince">
         <img src="../image/expr.png" alt="" className="secImg" />
       </div>
       <Roadmap />
       <VideoSec />
+      <Footer />
     </>
   );
 };
