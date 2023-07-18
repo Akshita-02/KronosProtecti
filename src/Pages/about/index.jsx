@@ -15,11 +15,7 @@ const AboutUs = () => {
         <h1 className="text-center my-4 text-[3rem] font-semibold uppercase">
           Why <span className="text-[#6fbff2]">Kronos?</span>
         </h1>
-        <TextCard
-          src={Image3}
-          orientation="flex-row"
-          text={<CtaText/>}
-        />
+        <TextCard src={Image3} orientation="flex-row" text={<CtaText />} />
 
         <section className="m-2 font-bold uppercase  flex flex-col justify-center items-center relative">
           <h2 className="xl:text-[20rem] text-[10rem]  text-[#6fbff2] md:-mt-[4rem] -mt-[3rem]">
@@ -38,18 +34,14 @@ const AboutUs = () => {
               </h3>
               <p>
                 {" "}
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                quam adipisci officiis ipsa enim dolorem quos aliquam facilis
-                laudantium necessitatibus autem aliquid fuga repellendus
-                assumenda dignissimos in ipsum. Ex, dolorum placeat deleniti at,
-                ipsum non corrupti quaerat aut vel veritatis enim illum natus
-                blanditiis ab magnam! Numquam, amet dolor quos quam ratione
-                magni veritatis aliquam praesentium enim vero quod voluptates.
-                Quod tempore itaque et eius, excepturi sunt quam, accusamus
-                nesciunt aperiam consectetur distinctio possimus recusandae.
-                Quam assumenda vel nesciunt delectus, explicabo aspernatur
-                facere hic facilis repudiandae dicta, eos architecto, in unde
-                voluptatum sapiente sed
+                At Kronos Protection, our mission is to safeguard individuals
+                and organizations by providing comprehensive human security
+                solutions. We are dedicated to ensuring the safety, well-being,
+                and peace of mind of our clients in today’s ever-changing world.
+                Through the expertise of our highly trained professionals and
+                the use of advanced technologies, we create a secure environment
+                where individuals can thrive and organizations can operate with
+                confidence.
               </p>
             </article>
             <ImageContainer
@@ -68,79 +60,72 @@ const AboutUs = () => {
               </h3>
               <p>
                 {" "}
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                quam adipisci officiis ipsa enim dolorem quos aliquam facilis
-                laudantium necessitatibus autem aliquid fuga repellendus
-                assumenda dignissimos in ipsum. Ex, dolorum placeat deleniti at,
-                ipsum non corrupti quaerat aut vel veritatis enim illum natus
-                blanditiis ab magnam! Numquam, amet dolor quos quam ratione
-                magni veritatis aliquam praesentium enim vero quod voluptates.
-                Quod tempore itaque et eius, excepturi sunt quam, accusamus
-                nesciunt aperiam consectetur distinctio possimus recusandae.
-                Quam assumenda vel nesciunt delectus, explicabo aspernatur
-                facere hic facilis repudiandae dicta, eos architecto, in unde
-                voluptatum sapiente sed
+                Our vision at Kronos Protection is to be the unrivaled leader in
+                the human security industry, renowned for our unwavering
+                commitment to safeguarding individuals and organizations
+                worldwide. We aim to set the highest standards of excellence and
+                innovation, earning the trust and confidence of our clients as
+                their trusted security partner. Central to our vision is a
+                client-centric approach, where we prioritize understanding the
+                unique needs, challenges, and aspirations of our clients. By
+                fostering collaborative partnerships and delivering customized
+                security solutions, we strive to surpass expectations, becoming
+                the preferred choice for their security needs.
               </p>
             </article>
           </div>
         </section>
         <section className="gap-6 flex flex-col">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-            quam adipisci officiis ipsa enim dolorem quos aliquam facilis
-            laudantium necessitatibus autem aliquid fuga repellendus assumenda
-            dignissimos in ipsum. Ex, dolorum placeat deleniti at, ipsum non
-            corrupti quaerat aut vel veritatis enim illum natus blanditiis ab
-            magnam! Numquam, amet dolor quos quam ratione magni veritatis
-            aliquam praesentium enim vero quod voluptates. Quod tempore itaque
-            et eius, excepturi sunt quam, accusamus nesciunt aperiam consectetur
-            distinctio possimus recusandae. Quam assumenda vel nesciunt
-            delectus, explicabo aspernatur facere hic facilis repudiandae dicta,
-            eos architecto, in unde voluptatum sapiente sed doloremque amet
-            quia. Doloribus magnam sapiente cumque labore, fugiat tempore
-            architecto. Optio non voluptatem atque, aperiam quam maiores nostrum
-            cupiditate, ad reprehenderit tempora magni alias eos, quo minus
-            ipsam distinctio autem voluptas sunt voluptate? Quo fugiat nostrum
-            odit aut dolor inventore, fugit ipsam consectetur! Hic minus et
-            doloribus ab saepe sequi nobis explicabo veniam ducimus possimus!
+            Welcome to Kronos Protection, a premier human security company
+            dedicated to providing comprehensive security solutions to
+            individuals and organizations worldwide. With a relentless
+            commitment to excellence, professionalism, and client satisfaction,
+            we are your trusted partner in safeguarding lives and assets in an
+            ever-changing world. At Kronos Protection, we understand that
+            security is not just a service; it’s a fundamental need that impacts
+            the peace of mind and well-being of our clients. Our team of highly
+            trained professionals brings together a wealth of expertise,
+            experience, and unwavering dedication to deliver unparalleled
+            security solutions tailored to meet your specific needs.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-            quam adipisci officiis ipsa enim dolorem quos aliquam facilis
-            laudantium necessitatibus autem aliquid fuga repellendus assumenda
-            dignissimos in ipsum. Ex, dolorum placeat deleniti at, ipsum non
-            corrupti quaerat aut vel veritatis enim illum natus blanditiis ab
-            magnam! Numquam, amet dolor quos quam ratione magni veritatis
-            aliquam praesentium enim vero quod voluptates. Quod tempore itaque
-            et eius, excepturi sunt quam, accusamus nesciunt aperiam consectetur
-            distinctio possimus recusandae. Quam assumenda vel nesciunt
-            delectus, explicabo aspernatur facere hic facilis repudiandae dicta,
-            eos architecto, in unde voluptatum sapiente sed doloremque amet
-            quia. Doloribus magnam sapiente cumque labore, fugiat tempore
-            architecto. Optio non voluptatem atque, aperiam quam maiores nostrum
-            cupiditate, ad reprehenderit tempora magni alias eos, quo minus
-            ipsam distinctio autem voluptas sunt voluptate? Quo fugiat nostrum
-            odit aut dolor inventore, fugit ipsam consectetur! Hic minus et
-            doloribus ab saepe sequi nobis explicabo veniam ducimus possimus!
+            What sets us apart is our client-centric approach. We listen
+            carefully to your concerns, aspirations, and unique challenges,
+            allowing us to develop customized security strategies that address
+            your individual requirements. Whether you are an executive in need
+            of personal protection, a high-profile event organizer, or a
+            corporation seeking comprehensive security solutions, we have the
+            expertise and resources to meet and exceed your expectations. Our
+            commitment to excellence extends beyond our personnel. We embrace
+            cutting-edge technologies, leveraging state-of-the-art surveillance
+            systems, access control solutions, and advanced threat intelligence
+            tools to enhance our security operations. By staying at the
+            forefront of technological advancements, we ensure that you receive
+            the most effective and efficient security measures available.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-            quam adipisci officiis ipsa enim dolorem quos aliquam facilis
-            laudantium necessitatibus autem aliquid fuga repellendus assumenda
-            dignissimos in ipsum. Ex, dolorum placeat deleniti at, ipsum non
-            corrupti quaerat aut vel veritatis enim illum natus blanditiis ab
-            magnam! Numquam, amet dolor quos quam ratione magni veritatis
-            aliquam praesentium enim vero quod voluptates. Quod tempore itaque
-            et eius, excepturi sunt quam, accusamus nesciunt aperiam consectetur
-            distinctio possimus recusandae. Quam assumenda vel nesciunt
-            delectus, explicabo aspernatur facere hic facilis repudiandae dicta,
-            eos architecto, in unde voluptatum sapiente sed doloremque amet
-            quia. Doloribus magnam sapiente cumque labore, fugiat tempore
-            architecto. Optio non voluptatem atque, aperiam quam maiores nostrum
-            cupiditate, ad reprehenderit tempora magni alias eos, quo minus
-            ipsam distinctio autem voluptas sunt voluptate? Quo fugiat nostrum
-            odit aut dolor inventore, fugit ipsam consectetur! Hic minus et
-            doloribus ab saepe sequi nobis explicabo veniam ducimus possimus!
+            At Kronos Protection, we are driven by a strong set of values.
+            Integrity, professionalism, and trustworthiness are at the core of
+            everything we do. We operate with the utmost discretion and
+            confidentiality, respecting your privacy and safeguarding your
+            sensitive information. We are also deeply committed to ethical
+            practices and social responsibility. We strive to create a positive
+            impact within the communities we serve, engaging in community
+            outreach programs, supporting local initiatives, and promoting
+            education and awareness about personal safety and security. Our
+            success lies in the long-standing relationships we build with our
+            clients. We believe in open communication, transparent partnerships,
+            and a collaborative approach to security. When you choose Kronos
+            Protection, you can expect a dedicated team that is responsive,
+            proactive, and committed to ensuring your safety and peace of mind.
+          </p>
+          <p>
+            Explore our range of services, from executive protection and risk
+            assessments to event security and residential security. Contact us
+            today to discuss your security needs and experience the Kronos
+            Protection difference. Together, we can create a secure environment
+            where you can thrive.
           </p>
         </section>
       </section>

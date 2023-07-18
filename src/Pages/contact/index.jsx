@@ -28,24 +28,21 @@ const ContactUs = () => {
             <AiOutlineMail className=" text-[2rem]  font-bold" />
             <div className="flex-col md:w-[80%] w-[100%]">
               <h2 className="text-2xl"> Chat with us</h2>
-              <p>Lorem ipsum dolor</p>
+              <p>k.security@icloud.com</p>
             </div>
           </div>
           <div className=" flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
             <BsTelephoneOutbound className=" text-[2rem]  font-bold" />
             <div className="flex-col md:w-[80%] w-[100%]">
               <h2 className="text-2xl"> Phone</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur.</p>
+              <p>+1(905)321-5540</p>
             </div>
           </div>
           <div className=" flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
             <SlLocationPin className=" text-[2rem]  font-bold" />
             <div className="flex-col md:w-[80%] w-[100%] ">
               <h2 className="text-2xl"> Office</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                quam adipisci officiis
-              </p>
+              <p>xyz@street.com</p>
             </div>
           </div>
         </div>
@@ -138,22 +135,24 @@ const ContactUs = () => {
 
       <p>
         {" "}
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, quam
-        adipisci officiis ipsa enim dolorem quos aliquam facilis laudantium
-        necessitatibus autem aliquid fuga repellendus assumenda dignissimos in
-        ipsum. Ex, dolorum placeat deleniti at, ipsum non corrupti quaerat aut
-        vel veritatis enim illum natus blanditiis ab magnam! Numquam, amet dolor
-        quos quam ratione magni veritatis aliquam praesentium enim vero quod
-        voluptates. Quod tempore itaque et eius, excepturi sunt quam, accusamus
-        nesciunt aperiam consectetur distinctio possimus recusandae. Quam
-        assumenda vel nesciunt delectus, explicabo aspernatur facere hic facilis
-        repudiandae dicta, eos architecto, in unde voluptatum sapiente sed
-        doloremque amet quia. Doloribus magnam sapiente cumque labore, fugiat
-        tempore architecto. Optio non voluptatem atque, aperiam quam maiores
-        nostrum cupiditate, ad reprehenderit tempora magni alias eos, quo minus
-        ipsam distinctio autem voluptas sunt voluptate? Quo fugiat nostrum odit
-        aut dolor inventore, fugit ipsam consectetur! Hic minus et doloribus ab
-        saepe sequi nobis explicabo veniam ducimus possimus!
+        Our team of highly trained professionals is ready to address your
+        security concerns promptly and efficiently. Whether you require security
+        services for your home, business, event, or any other setting, Kronos
+        Protection Security Company is here to ensure your safety and peace of
+        mind.
+      </p>
+
+      <p>
+        {" "}
+        No matter the size or complexity of your security needs, we are equipped
+        to handle them with utmost professionalism and care. At Kronos
+        Protection Security Company, we prioritize your safety and security
+        above all else.
+      </p>
+      <p>
+        {" "}
+        To get in touch with us, please fill out the form below, and one of our
+        representatives will contact you shortly:
       </p>
       <form>
         <h3 className="text-center text-2xl font-semibold mb-[4rem]">
