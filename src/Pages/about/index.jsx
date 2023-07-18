@@ -11,24 +11,25 @@ import CtaText from "./components/CtaText";
 const AboutUs = () => {
   return (
     <>
-      <section className=" m-4 xl:px-[5rem] md:mx-[5rem] ">
-        <h1 className="text-center my-4 text-[3rem] font-semibold uppercase">
-          Why <span className="text-[#6fbff2]">Kronos?</span>
-        </h1>
+      <section className=" m-4  xl:px-[5rem] md:px-[1rem] ">
+        <div className=" flex gap-4 text-center my-4 text-[3rem] font-semibold uppercase w-full  justify-center">
+          <h1>Why</h1>
+          <p className="text-[#6fbff2] ">Kronos?</p>
+        </div>
         <TextCard src={Image3} orientation="flex-row" text={<CtaText />} />
 
         <section className="m-2 font-bold uppercase  flex flex-col justify-center items-center relative">
-          <h2 className="xl:text-[20rem] text-[10rem]  text-[#6fbff2] md:-mt-[4rem] -mt-[3rem]">
-            200<span className="xl:text-[15rem] text-[8rem]">+</span>
+          <h2 className="xl:text-[20rem] sm:text-[10rem] text-[8rem]  text-[#6fbff2] md:-mt-[4rem] sm:-mt-[5rem] -mt-[6rem]">
+            200<span className="xl:text-[15rem] sm:text-[8rem] text-[4rem]">+</span>
           </h2>
-          <h3 className="xl:text-[10rem] md:text-[8rem] text-[5rem] xl:-mt-[10rem] -mt-[5rem] p-0">
+          <h3 className="xl:text-[10rem] md:text-[8rem] sm:text-[5rem] text-[4rem] xl:-mt-[10rem] sm:-mt-[5rem] -mt-[3rem] p-0">
             employees
           </h3>
-          <Slider1 height="h-[35rem] -z-1" sliderImages={contactSliderImages} />
+          <Slider1 height="md:h-[30rem] lg:h-[40rem] xl:h-[50rem] xl:w-[60rem] lg:w-[50rem] h-[20rem] w-full md:w-[35rem]" sliderImages={contactSliderImages} />
         </section>
         <section className="my-[4rem] flex flex-col gap-6 justify-center items-center w-full ">
-          <div className="flex md:flex-row flex-col h-fit my-4 gap-[3rem] ">
-            <article className="md:w-[50%] px-2 h-100% ">
+          <div className="flex lg:flex-row flex-col h-fit my-4 gap-[3rem] ">
+            <article className="lg:w-[50%] px-2 h-100% ">
               <h3 className="text-2xl mb-6 font-semibold text-[#5c65e2]">
                 Our Mission
               </h3>
@@ -46,15 +47,15 @@ const AboutUs = () => {
             </article>
             <ImageContainer
               src={Image4}
-              className="h-[25rem] md:w-[70%] xl:w-[60%]"
+              className="h-[25rem] lg:w-[70%] xl:w-[60%]"
             />
           </div>
-          <div className="flex md:flex-row flex-col-reverse h-fit my-4 gap-[3rem] ">
+          <div className="flex lg:flex-row flex-col-reverse h-fit my-4 gap-[3rem] ">
             <ImageContainer
               src={Image6}
-              className="h-[25rem] md:w-[70%] xl:w-[60%]"
+              className="h-[25rem] lg:w-[70%] xl:w-[60%]"
             />
-            <article className="md:w-[50%] px-2 h-100%">
+            <article className="lg:w-[50%] px-2 h-100%">
               <h3 className="text-2xl mb-6 font-semibold text-[#5c65e2]">
                 Our Vision
               </h3>
