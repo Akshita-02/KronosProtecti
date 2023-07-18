@@ -186,7 +186,7 @@ const Service = () => {
         <div className="hk">
           <p>Close security by Kronos Protection</p>
         </div>
-        <div className="img">
+        <div className="img w-full ">
           <img src="../../../image/close-protect.png" alt="" />
         </div>
         {/* //proteection card starts here  */}
