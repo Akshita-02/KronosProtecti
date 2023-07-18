@@ -1,6 +1,7 @@
 body{
-  background: rgb(28, 28, 40);
-  opacity: 0.85;
+  opacity: 2;
   overflow-x: hidden;
-  background: linear-gradient(0d-eg, rgba(86,86,188,1) 9%, rgba(9,8,27,1) 41%);
+  background: rgb(86, 86, 188);
+  background: linear-gradient(10deg, rgba(86, 86, 188, 1) 0%, rgba(9, 8, 27, 1) 83%);
+
 }

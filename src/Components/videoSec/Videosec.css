@@ -1,14 +1,10 @@
 .video-sec {
-    /* background-image: url('../../../src/assets/videobg.png') !important; */
-    background-repeat: no-repeat;
     background-size: 100vw;
     height: 100vh;
 }
 
 video {
     margin-left: 23vw;
-    /* margin-top:200px; */
-    /* width: 100%; */
     border: 2px solid black;
     border-radius: 12px solid black;
     padding: 10px;
@@ -28,6 +24,7 @@ h1 {
         margin-left: 5vw;
         margin-top: 100px;
         height: 250px;
+        width: 345px;
     }
 }
 

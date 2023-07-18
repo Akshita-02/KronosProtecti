@@ -44,6 +44,10 @@ const Footer = () => {
             </p>
           </div>
         </div>
+        <hr />
+        <div className="footer-bottom">
+          <p>© Copyright 2023. All Rights Reserved. KRONOS PROTECTION</p>
+        </div>
       </div>
     </>
   );

@@ -7,11 +7,11 @@
     padding-top: 100px;
     position: relative;
     color: antiquewhite;
-}
+   }
 
 #mycanvas {
     width: 85%;
-    height: 100%;
+    height: 110%;
     position: relative;
     margin: auto;
 }
@@ -158,7 +158,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        font-size:20px;
+        font-size: 20px;
         justify-content: space-around;
         margin-top: -160vw;
     }

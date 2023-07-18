@@ -1,6 +1,5 @@
 .footer {
-    /* background-color: rgb(23, 100, 124); */
-    width: 100vw;
+height: 0;
 }
 
 .main-footer-container {
@@ -8,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-}
+   }
 
 .footer-logo {
     display: flex;
@@ -82,6 +81,14 @@
     font-size: 33px;
 }
 
+.footer-bottom{
+    text-align: center;
+    margin-bottom: 23px;
+    font-size: 20px;
+    background-color: #000;
+    color: #f6f4f4;
+    height: 50px;
+}
 /* Media Queries */
 
 /* For small screens */
