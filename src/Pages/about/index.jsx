@@ -11,11 +11,10 @@ import CtaText from "./components/CtaText";
 const AboutUs = () => {
   return (
     <>
-      <section className=" m-4  xl:px-[5rem] md:px-[1rem] ">
-        <div className=" flex gap-4 text-center my-4 text-[3rem] font-semibold uppercase w-full  justify-center">
-          <h1>Why</h1>
-          <p className="text-[#6fbff2] ">Kronos?</p>
-        </div>
+      <section className=" m-4 xl:px-[5rem] md:mx-[5rem] ">
+        <h1 className="text-center my-4 text-[3rem] font-semibold uppercase">
+          Why <span className="text-[#2fdcff]">Kronos?</span>
+        </h1>
         <TextCard src={Image3} orientation="flex-row" text={<CtaText />} />
 
         <section className="m-2 font-bold uppercase  flex flex-col justify-center items-center relative">
@@ -28,9 +27,9 @@ const AboutUs = () => {
           <Slider1 height="md:h-[30rem] lg:h-[40rem] xl:h-[50rem] xl:w-[60rem] lg:w-[50rem] h-[20rem] w-full md:w-[35rem]" sliderImages={contactSliderImages} />
         </section>
         <section className="my-[4rem] flex flex-col gap-6 justify-center items-center w-full ">
-          <div className="flex lg:flex-row flex-col h-fit my-4 gap-[3rem] ">
-            <article className="lg:w-[50%] px-2 h-100% ">
-              <h3 className="text-2xl mb-6 font-semibold text-[#5c65e2]">
+          <div className="flex md:flex-row flex-col h-fit my-4 gap-[3rem] ">
+            <article className="md:w-[50%] px-2 h-100% ">
+              <h3 className="text-2xl mb-6 font-semibold text-[#2fdcff]">
                 Our Mission
               </h3>
               <p>
@@ -55,8 +54,8 @@ const AboutUs = () => {
               src={Image6}
               className="h-[25rem] lg:w-[70%] xl:w-[60%]"
             />
-            <article className="lg:w-[50%] px-2 h-100%">
-              <h3 className="text-2xl mb-6 font-semibold text-[#5c65e2]">
+            <article className="md:w-[50%] px-2 h-100%">
+              <h3 className="text-2xl mb-6 font-semibold text-[#2fdcff]">
                 Our Vision
               </h3>
               <p>
