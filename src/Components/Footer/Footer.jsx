@@ -39,7 +39,9 @@ const Footer = () => {
           </div>
           <div className="social-contact-right">
             <i class="fa-solid fa-phone"></i> Phone
-            <p>+1(905)321-5540</p>
+            <p>
+              <a href="tel:+19053215540">+1(905)321-5540</a>
+            </p>
           </div>
         </div>
       </div>
