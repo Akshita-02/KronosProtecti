@@ -47,7 +47,7 @@ const Roadmap = () => {
           style={{ color: "blueviolet" }}
         ></canvas>
 
-        <div className="phone">
+        
           <div className="roadmap-content">
             <div className="ct1 ctm">
               <figure>
@@ -130,6 +130,88 @@ const Roadmap = () => {
             </div>
           </div>
         </div>
+        <div className="phone">
+           <div className="ctm">
+              <figure>
+                <img
+                  src="../../image/Screenshot 2023-07-14 133917.png"
+                  alt=""
+                />
+                <figcaption>Assess client need</figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/2.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/3.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/4.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/5.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/6.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/7.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/8.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/9.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ctm">
+              <figure>
+                <img src="../../image/10.png" alt="" />
+                <figcaption>
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
       </div>
     </>
   );

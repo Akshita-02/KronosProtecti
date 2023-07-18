@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: black; */
     padding-top: 100px;
     position: relative;
     color: antiquewhite;
@@ -12,7 +11,7 @@
 
 #mycanvas {
     width: 85%;
-    height: 110%;
+    height: 100%;
     position: relative;
     margin: auto;
 }
@@ -20,17 +19,14 @@
 .services h1 {
     font-size: 88px;
     text-align: center;
-    align-items: center;
 }
 
 .services h1 span {
     color: #2fdcff;
-
 }
 
 .services p {
     text-align: center;
-    align-items: center;
     font-size: 20px;
 }
 
@@ -39,12 +35,11 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    left: 0px;
+    left: 0;
     top: 65px;
 }
 
 .roadmap-content img {
-    justify-content: space-evenly;
     height: 100px;
     width: 100px;
     margin: 10px;
@@ -67,7 +62,7 @@
     justify-content: space-evenly;
     width: 100%;
     top: 252px;
-    left: 0px;
+    left: 0;
 }
 
 .ct-sec-3 img {
@@ -78,7 +73,6 @@
     border: 2px solid #2fdcff;
     border-radius: 23px;
     margin: 40px;
-
 }
 
 .ct-sec-3 {
@@ -101,10 +95,12 @@
     justify-content: center;
     align-items: center;
 }
-.cap6{
+
+.cap6 {
     margin-top: 110px;
 }
-.cap7{
+
+.cap7 {
     margin-top: 145px;
 }
 
@@ -113,6 +109,12 @@
     transition: transform 0.2s ease;
     cursor: pointer;
 }
+
+.phone {
+    display: none;
+}
+
+/* Media Queries */
 
 /* For small screens */
 @media only screen and (max-width: 600px) {
@@ -131,25 +133,44 @@
     .services p {
         font-size: 16px;
     }
+
     .roadmap-content {
         display: flex;
-        flex-direction: column;
-        
+        flex-wrap: wrap;
+        height: 50%;
+        position: static;
+        visibility: hidden;
     }
+
     .ct-sec-2 {
         display: flex;
-        flex-direction: column;
-
+        flex-wrap: wrap;
+        width: 100%;
+        position: static;
+        visibility: hidden;
     }
+
     .ct-sec-3 {
-        display: flex;
-        flex-direction: column;
+        visibility: hidden;
     }
-.phone{
-    display: flex;
-    flex-direction: column;
 
-}
+    .phone {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size:20px;
+        justify-content: space-around;
+        margin-top: -160vw;
+    }
+
+    .phone img {
+        border: 3px solid #2fdcff;
+        border-radius: 23px;
+        justify-content: space-around;
+        margin: 20px;
+        height: 140px;
+        margin-left: 30px;
+    }
 }
 
 /* For medium screens */
@@ -159,9 +180,8 @@
     }
 
     #mycanvas {
-        /* display: none; */
         width: 85%;
-        height: 110%;
+        height: 100%;
         position: relative;
         margin: auto;
     }
@@ -173,7 +193,6 @@
     .services p {
         font-size: 18px;
     }
-
 }
 
 /* For large screens */
