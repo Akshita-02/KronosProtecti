@@ -144,7 +144,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/2.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                 Develop a security plan
                 </figcaption>
               </figure>
             </div>
@@ -152,7 +152,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/3.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                  Hire and train security personnel
                 </figcaption>
               </figure>
             </div>
@@ -160,7 +160,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/4.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                  Emergency response planning
                 </figcaption>
               </figure>
             </div>
@@ -168,7 +168,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/5.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                  Implement security
                 </figcaption>
               </figure>
             </div>
@@ -184,7 +184,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/7.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                  Maintain thorough records of all security incidents
                 </figcaption>
               </figure>
             </div>
@@ -192,7 +192,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/8.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                  Conduct regular reviews of the security plan
                 </figcaption>
               </figure>
             </div>
@@ -200,7 +200,7 @@ const Roadmap = () => {
               <figure>
                 <img src="../../image/9.png" alt="" />
                 <figcaption>
-                  Monitoring and surveillance
+                 Continuous training and development
                 </figcaption>
               </figure>
             </div>
