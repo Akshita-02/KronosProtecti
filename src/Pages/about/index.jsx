@@ -13,7 +13,7 @@ const AboutUs = () => {
     <>
       <section className=" m-4 xl:px-[5rem] md:mx-[5rem] ">
         <h1 className="text-center my-4 text-[3rem] font-semibold uppercase">
-          Why <span className="text-[#6fbff2]">Kronos?</span>
+          Why <span className="text-[#2fdcff]">Kronos?</span>
         </h1>
         <TextCard src={Image3} orientation="flex-row" text={<CtaText />} />
 
@@ -29,7 +29,7 @@ const AboutUs = () => {
         <section className="my-[4rem] flex flex-col gap-6 justify-center items-center w-full ">
           <div className="flex md:flex-row flex-col h-fit my-4 gap-[3rem] ">
             <article className="md:w-[50%] px-2 h-100% ">
-              <h3 className="text-2xl mb-6 font-semibold text-[#5c65e2]">
+              <h3 className="text-2xl mb-6 font-semibold text-[#2fdcff]">
                 Our Mission
               </h3>
               <p>
@@ -55,7 +55,7 @@ const AboutUs = () => {
               className="h-[25rem] md:w-[70%] xl:w-[60%]"
             />
             <article className="md:w-[50%] px-2 h-100%">
-              <h3 className="text-2xl mb-6 font-semibold text-[#5c65e2]">
+              <h3 className="text-2xl mb-6 font-semibold text-[#2fdcff]">
                 Our Vision
               </h3>
               <p>
