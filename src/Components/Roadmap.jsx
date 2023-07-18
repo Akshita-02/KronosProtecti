@@ -27,15 +27,15 @@ const Roadmap = () => {
     <>
       <div className="services">
         <h1>
-          How We Provide <span>Our Services </span>
+          How We Provide <span>Our Services</span>
         </h1>
         <p>
           Providing security services involves a range of activities aimed at
-          protecting people, prperty,{" "}
-        </p>{" "}
+          protecting people, property,
+        </p>
         <p>
-          and assests from potential threatss. Here are some general steps to
-          consider when providing securrity services:
+          and assets from potential threats. Here are some general steps to
+          consider when providing security services:
         </p>
       </div>
 
@@ -46,82 +46,89 @@ const Roadmap = () => {
           height="700"
           style={{ color: "blueviolet" }}
         ></canvas>
-      </div>
 
-      <div className="roadmap-content">
-        <div className="ct1 ctm">
-          <img
-            src="../../image/Screenshot 2023-07-14 133917.png"
-            alt=""
-          />
-          <p> Asseess client need</p>
-        </div>
-        <div className="ct1 ctm">
-          <img
-            src="../../image/2.png"
-            alt=""
-          />
-          <p> develop a security plan</p>
-        </div>
-        <div className="ct2 ctm">
-          <img
-            src="../../image/3.png"
-            alt=""
-          />
-          <p> Hire and train security personal</p>
-        </div>
-        <div className="ct3 ctm">
-          <img
-            src="../../image/4.png"
-            alt=""
-          />
-          <p> Emergency response planing</p>
-        </div>
-      </div>
-      <div className="ct-sec-2">
-        <div className="ct4 ctm">
-          <img
-            src="../../image/6.png"
-            alt=""
-          />
-          <p> Impliment security</p>
-        </div>
-        <div className="ct4 ctm">
-          <img
-            src="../../image/7.png"
-            alt=""
-          />
-          <p> Monitoring and surveillance</p>
-        </div>
-        <div className="ct4 ctm">
-          <img
-            src="../../image/8.png"
-            alt=""
-          />
-          <p> Maintain through records of all security incidents</p>
-        </div>
-      </div>
-      <div className="ct-sec-3">
-        <div className="ct6 ctm">
-          <img
-            src="../../image/9.png"
-            alt=""
-          />
-          <p>Contact regular reviews of the security plan</p>
-        </div>
-        <div className="ct6 ctm">
-          <img
-            src="../../image/10.png"
-            alt=""
-          />
-          <p> Continous training and development</p>
-        </div>
-        <div className="ct6 ctm">
-          <img
-            src="../../image/5.png"
-            alt=""
-          />
-          <p> Monitoring and surveillance</p>
+        <div className="phone">
+          <div className="roadmap-content">
+            <div className="ct1 ctm">
+              <figure>
+                <img
+                  src="../../image/Screenshot 2023-07-14 133917.png"
+                  alt=""
+                />
+                <figcaption>Assess client need</figcaption>
+              </figure>
+            </div>
+            <div className="ct2 ctm">
+              <figure>
+                <img src="../../image/2.png" alt="" />
+                <figcaption>Develop a security plan</figcaption>
+              </figure>
+            </div>
+            <div className="ct3 ctm">
+              <figure>
+                <img src="../../image/3.png" alt="" />
+                <figcaption>Hire and train security personnel</figcaption>
+              </figure>
+            </div>
+            <div className="ct4 ctm">
+              <figure>
+                <img src="../../image/4.png" alt="" />
+                <figcaption>Emergency response planning</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div className="ct-sec-2">
+            <div className="ct5 ctm">
+              <figure>
+                <img src="../../image/6.png" alt="" />
+                <figcaption className="cap6">Implement security</figcaption>
+              </figure>
+            </div>
+            <div className="ct6 ctm">
+              <figure>
+                <img src="../../image/7.png" alt="" />
+                <figcaption className="cap6">
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ct7 ctm">
+              <figure>
+                <img src="../../image/8.png" alt="" />
+                <figcaption className="cap6">
+                  Maintain thorough records of all security incidents
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div className="ct-sec-3">
+            <div className="ct8 ctm">
+              <figure>
+                <img src="../../image/9.png" alt="" />
+                <figcaption className="cap7">
+                  Conduct regular reviews of the security plan
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ct9 ctm">
+              <figure>
+                <img src="../../image/10.png" alt="" />
+                <figcaption className="cap7">
+                  Continuous training and development
+                </figcaption>
+              </figure>
+            </div>
+            <div className="ct10 ctm">
+              <figure>
+                <img src="../../image/5.png" alt="" />
+                <figcaption className="cap7">
+                  Monitoring and surveillance
+                </figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </>

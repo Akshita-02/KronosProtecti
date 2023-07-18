@@ -1,17 +1,19 @@
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 670px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
     padding-top: 100px;
+    position: relative;
+    color: antiquewhite;
 }
 
 #mycanvas {
     width: 85%;
-    height: 100%;
-    position: absolute;
+    height: 110%;
+    position: relative;
     margin: auto;
 }
 
@@ -19,7 +21,6 @@
     font-size: 88px;
     text-align: center;
     align-items: center;
-    /* width: 100%; */
 }
 
 .services h1 span {
@@ -36,27 +37,23 @@
 .roadmap-content {
     position: absolute;
     display: flex;
-    flex-grow: 3;
-    height: 25px;
-    width: 30px;
-    margin-top: -45rem;
-    margin-left: 18rem;
+    justify-content: space-evenly;
+    width: 100%;
+    left: 0px;
+    top: 65px;
 }
 
 .roadmap-content img {
-    /* position: absolute; */
     justify-content: space-evenly;
     height: 100px;
     width: 100px;
     margin: 10px;
     border: 2px solid #2fdcff;
     border-radius: 23px;
-    /* margin-left: 50px; */
-
 }
 
 .ct-sec-2 img {
-    /* position: absolute; */
+    position: absolute;
     height: 100px;
     width: 100px;
     margin: 10px;
@@ -67,15 +64,14 @@
 .ct-sec-2 {
     position: absolute;
     display: flex;
-    flex-grow: 3;
-    height: 25px;
-    width: 30px;
-    margin-top: -32rem;
-    margin-left: 25rem;
+    justify-content: space-evenly;
+    width: 100%;
+    top: 252px;
+    left: 0px;
 }
 
 .ct-sec-3 img {
-    /* position: absolute; */
+    position: absolute;
     height: 100px;
     width: 100px;
     margin: 10px;
@@ -88,20 +84,28 @@
 .ct-sec-3 {
     position: absolute;
     display: flex;
-    flex-grow: 3;
-    height: 25px;
-    width: 30px;
-    margin-top: -22rem;
-    margin-left: 25rem;
+    justify-content: space-evenly;
+    width: 100%;
+    top: 409px;
+    left: 0;
 }
 
 .ctm p {
     text-align: center;
-
 }
 
 .ctm {
-    margin-left: 150px;
+    width: 153px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cap6{
+    margin-top: 110px;
+}
+.cap7{
+    margin-top: 145px;
 }
 
 .ctm img:hover {
@@ -109,12 +113,6 @@
     transition: transform 0.2s ease;
     cursor: pointer;
 }
-.ct8{
-    margin-top: -28px !important;
-    margin-left: 10px !important;
-}
-
-/* Media Queries */
 
 /* For small screens */
 @media only screen and (max-width: 600px) {
@@ -123,7 +121,7 @@
     }
 
     #mycanvas {
-        width: 80%;
+        display: none;
     }
 
     .services h1 {
@@ -133,40 +131,25 @@
     .services p {
         font-size: 16px;
     }
-
-    .roadmap-content,
-    .ct-sec-2,
-    .ct-sec-3 {
-        margin-left: 15%;
-    }
-
     .roadmap-content {
-        margin-top: -47rem;
+        display: flex;
+        flex-direction: column;
+        
     }
-    .ct-sec-2{
-        margin-top: -550px;
-    }
+    .ct-sec-2 {
+        display: flex;
+        flex-direction: column;
 
-    .ct3 {
-        display: none;
     }
-
-
-    .roadmap-content img,
-    .ct-sec-2 img,
-    .ct-sec-3 img {
-        height: 80px;
-        width: 80px;
-        margin: 5px;
+    .ct-sec-3 {
+        display: flex;
+        flex-direction: column;
     }
+.phone{
+    display: flex;
+    flex-direction: column;
 
-    .ctm {
-        margin-left: 20px;
-    }
-
-    .ctm p {
-        font-size: 0.7rem;
-    }
+}
 }
 
 /* For medium screens */
@@ -176,7 +159,11 @@
     }
 
     #mycanvas {
-        width: 90%;
+        /* display: none; */
+        width: 85%;
+        height: 110%;
+        position: relative;
+        margin: auto;
     }
 
     .services h1 {
@@ -187,24 +174,6 @@
         font-size: 18px;
     }
 
-    .roadmap-content,
-    .ct-sec-2,
-    .ct-sec-3 {
-        margin-left: 10%;
-        margin-top: -30rem;
-    }
-
-    .roadmap-content img,
-    .ct-sec-2 img,
-    .ct-sec-3 img {
-        height: 90px;
-        width: 90px;
-        margin: 8px;
-    }
-
-    .ctm {
-        margin-left: 50px;
-    }
 }
 
 /* For large screens */

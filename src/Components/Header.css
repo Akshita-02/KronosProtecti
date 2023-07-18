@@ -1,10 +1,10 @@
-
 .header-container {
     background-color: black;
     color: white;
     border: 2px solid white;
     border-radius: 23px;
     margin-top: 10px;
+    height:fit-content;
     z-index: 10;
 }
 
@@ -24,72 +24,78 @@
 
 .header-top h1 {
     font-family: 'timesNewRoman';
-    font-size: 4rem;
-    align-items: center;
-}
-.header-bottom{
-  float: right;
-  margin-top: -120px;
+    font-size: 3.5rem;
+    margin-top: 15px;
 
 }
-.header-bottom ul{
+
+.header-bottom {
+    float: right;
+    margin-top: -120px;
+}
+
+.header-bottom ul {
     display: flex;
-
 }
-.header-bottom ul li{
+
+.header-bottom ul li {
     display: flex;
     list-style: none;
     margin: 2rem;
     border: 2px solid #24CCCE;
-    border-radius:8px;
+    border-radius: 8px;
     padding: 5px;
-    font-weight:400;
+    font-weight: 400;
     text-decoration: none;
 }
-.header-bottom ul li a{
+
+.header-bottom ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
 .header-bottom ul li a.active {
     color: green;
 }
-.header-bottom ul li a.inactive{
+
+.header-bottom ul li a.inactive {
     color: white;
 }
-  
-.header-bottom ul li:hover{
+
+.header-bottom ul li:hover {
     background-color: rgb(81, 101, 230);
     cursor: pointer;
 }
-.hamburger{
+
+.hamburger {
     display: none;
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+    z-index: 15;
+    /* margin-right: 30px; */
 }
 
 /* Media Queries */
 
 /* For small screens */
 @media only screen and (max-width: 600px) {
-    
     .header-top img {
         height: 10vh;
     }
 
     .header-top h1 {
-        font-size: 1.5rem;
-        text-align: center;
-
+        font-size:22px;
+    }
+    .header-top .logo {
+        visibility: hidden;
     }
 
-    .header-bottom {
-        margin-top: -80px;
-    }
-    .nav-menu{
+    .nav-menu {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
         height: 100vh;
         background: rgba(0, 0, 0, 0.9);
         position: absolute;
@@ -99,22 +105,23 @@
         transition: 0.5s ease-in-out;
         /* background: #2fc22f; */
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: 0;
     }
-   
-    .nav-menu li{
+
+    .nav-menu li {
         padding: 1rem 0;
-        
     }
-    .nav-menu li a{
-        font-size: 2rem ;
 
+    .nav-menu li a {
+        font-size: 1rem;
     }
-    .hamburger{
+
+    .hamburger {
         display: initial;
-    } 
-
+        font-size:1.5rem;
+    }
 }
 
 /* For medium screens */
@@ -130,11 +137,12 @@
     .header-bottom {
         margin-top: -100px;
     }
-    .nav-menu{
+
+    .nav-menu {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
         height: 100vh;
         background: rgba(0, 0, 0, 0.9);
         position: absolute;
@@ -144,25 +152,29 @@
         transition: 0.5s ease-in-out;
         /* background: #2fc22f; */
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: 0;
     }
-   
-    .nav-menu li{
+
+    .nav-menu li {
         padding: 1rem 0;
-        
     }
-    .nav-menu li a{
-        font-size: 2rem ;
 
+    .nav-menu li a {
+        font-size: 1rem;
     }
-    .hamburger{
+
+    .hamburger {
         display: initial;
-    } 
-
+    }
 }
 
 /* For large screens */
 @media only screen and (min-width: 1040px) {
+    .header-bottom {
+        float: right;
+        margin-top: -80px;
+    }
     /* No additional changes for large screens */
 }

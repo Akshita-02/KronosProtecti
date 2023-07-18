@@ -10,6 +10,17 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="header-top">
+      <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <div className="cross-btn">
+              <i className="fas fa-times"></i>
+            </div>
+          ) : (
+            <div className="hamburger-btn">
+              <i className="fas fa-bars"></i>
+            </div>
+          )}
+        </div>
         <div className="logo">
           <img src="../image/logo.png" alt="" />
         </div>
@@ -42,17 +53,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="hamburger" onClick={handleClick}>
-          {click ? (
-            <div className="cross-btn">
-              <i className="fas fa-times"></i>
-            </div>
-          ) : (
-            <div className="hamburger-btn">
-              <i className="fas fa-bars"></i>
-            </div>
-          )}
-        </div>
+       
       </div>
     </div>
   );

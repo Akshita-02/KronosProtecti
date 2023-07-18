@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgb(23, 100, 124);
+    /* background-color: rgb(23, 100, 124); */
     width: 100vw;
 }
 
@@ -58,24 +58,27 @@
 .social-contact-left {
     font-size: 33px;
 }
+
 .social-contact-middke {
-   justify-content: center;
-   align-items: center;
-   margin-left: 5px;
-   font-size: 33px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 33px;
 }
+
 .social-contact-middke i {
- margin:15px ;
+    margin: 15px;
 }
+
 .social-contact-middke i:hover {
- font-size: 40px;
- transition: 02s ease;
- cursor: pointer;
- color: rgb(12, 58, 118);
+    font-size: 40px;
+    transition: 02s ease;
+    cursor: pointer;
+    color: rgb(12, 58, 118);
 }
 
 .social-contact-right {
-    margin:15px ;
+    margin: 15px;
     font-size: 33px;
 }
 
@@ -83,30 +86,73 @@
 
 /* For small screens */
 @media only screen and (max-width: 600px) {
+    .footer {
+        /* background-color: #030202; */
+        /* opacity: .85; */
+        width: 100vw;
+        height: 20vh;
+    }
+
     .footer-logo img {
-        width: 50%;
+        visibility: hidden;
     }
 
     .line-left,
     .line-right {
-        width: 100px;
+        visibility: hidden;
     }
 
     .social-contact-section {
         flex-direction: column;
         align-items: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    .social-contact-left,
+    .social-contact-right{
+        font-size: 20px;
+        position: absolute;
+    }
+    .social-contact-left{
+        margin-top:-150px;
+        margin-left: -80px;
+
+    }
+    .social-contact-right{
+        margin-top: 100px;
+        margin-left: -120px;
     }
 
     .social-contact-middke {
-        margin-top: 10px;
-        font-size: 20px;
-    }
-    .social-icon{
-        justify-content: space-evenly;
         display: flex;
+        flex-direction: column;
+        margin-left: 280px;
+    }
+
+    .s-p {
+        display: none;
+        visibility: hidden;
+    }
+
+    .social-icon {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        align-items: right;
         font-size: 50px;
     }
+
+    .perpendicular-line {
+        display: none;
+    }
+    .social-contact-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
+
 /* For medium screens */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .footer-logo img {
@@ -122,7 +168,8 @@
         margin-left: 0;
         font-size: 20px;
     }
-    .social-icon{
+
+    .social-icon {
         font-size: 40px;
     }
 }
