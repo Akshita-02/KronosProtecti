@@ -49,91 +49,57 @@ const ContactUs = () => {
           </div>
           <form className="md:w-[80%] lg:w-[50%]   w-[100%] md:mx-[4rem]  md:px-[4rem] p-2 m-2 bg-black rounded-xl">
             <div className="border-b border-gray-900/10 pb-12">
-              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                <div className="sm:col-span-3">
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
-                  >
-                    First name
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="first-name"
-                      id="first-name"
-                      autoComplete="given-name"
-                      className="block bg-transparent w-full rounded-md  p-[1rem] py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2   sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-3">
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
-                  >
-                    Last name
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="last-name"
-                      id="last-name"
-                      autoComplete="family-name"
-                      className="block bg-transparent w-full rounded-md  py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 p-[1rem] placeholder:text-gray-400 focus:ring-2   sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-3 ">
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
-                  >
-                    Email address
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      className="block bg-transparent w-full rounded-md  py-1.5 ttext-whiteshadow-sm ring-1 ring-inset p-[1rem] ring-gray-300 placeholder:text-gray-400 focus:ring-2   sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div className="col-span-full">
-                  <label
-                    htmlFor="about"
-                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
-                  >
-                    Message
-                  </label>
-                  <div className="mt-2">
-                    <textarea
-                      id="about"
-                      name="about"
-                      rows={5}
-                      className="block bg-transparent w-full rounded-md border-0 py-1.5 ttext-whiteshadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2   sm:text-sm sm:leading-6 p-[1rem]"
-                      defaultValue={""}
-                    />
-                  </div>
-                  <p className="mt-3 text-sm leading-6 text-gray-600">
-                    Write a few sentences about your need.
-                  </p>
-                </div>
+              <div class="input-container ic1">
+                <input
+                  placeholder=""
+                  type="text"
+                  class="input"
+                  id="firstname"
+                />
+                <div class="cut"></div>
+                <label class="iLabel" for="yourname">
+                  Your Name
+                </label>
               </div>
-            </div>
 
-            <div className="my-6 flex items-center justify-center gap-x-6">
-              <button class="btn1 py-4" style={{ "vertical-align": "middle" }}>
-                <span>Send</span>
-              </button>
+              <div class="input-container ic2 ">
+                <input placeholder="" type="text" class="input" id="email" />
+                <div class="cut"></div>
+                <label class="iLabel" for="email">
+                  Your Email
+                </label>
+              </div>
+              <div class="input-container ic2">
+                <input placeholder="" type="text" class="input" id="email" />
+                <div class="cut cut-short"></div>
+                <label class="iLabel" for="email">
+                  Subject
+                </label>
+              </div>
+              <div class=" ic2 relative ">
+                <textarea
+                  placeholder=""
+                  cols={10}
+                  class="input-message input-cont"
+                  id="message"
+                />
+                <div class="cut cut-short"></div>
+                <label class="iLabel" for="message">
+                  Message
+                </label>
+              </div>
+              <div className="flex justify-center mt-6 ">
+                <button
+                  class=" mx-auto bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md"
+                  type="text"
+                >
+                  submit
+                </button>
+              </div>
             </div>
           </form>
         </div>
-        <div  className="lg:py-[2rem] pb-[4rem]">
+        <div className="lg:py-[2rem] pb-[4rem]">
           <p>
             {" "}
             Our team of highly trained professionals is ready to address your
@@ -152,8 +118,8 @@ const ContactUs = () => {
           </p>
           <p>
             {" "}
-            To get in touch with us, please fill out the form, and one of
-            our representatives will contact you shortly:
+            To get in touch with us, please fill out the form, and one of our
+            representatives will contact you shortly:
           </p>
         </div>
       </div>
@@ -191,10 +157,10 @@ const ContactUs = () => {
           <div>
             <p className="mb-4">What should we do to improve:</p>
 
-            <div class="bg-transparent subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
+            <div class="bg-transparent rounded-lg subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
               <textarea
                 placeholder="Your contibutions..."
-                className="subscribe-input bg-transparent border-[#1867df] border-2 rounded-xl w-full p-4 h-[10rem]  "
+                className="subscribe-input focus:outline-none bg-transparent border-[#1867df] border rounded-xl w-full p-4 h-[10rem]  "
                 name="contributions"
               />
               <br />
