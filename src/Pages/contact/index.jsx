@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { SlLocationPin } from "react-icons/sl";
 import "./contact.css";
-import { useState } from "react";
-import { useCallback } from "react";
 
 const ContactUs = () => {
-  const [rateValue, setRateValue] = useState(0);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    rating: 0,
+    contributions: "",
+  });
 
-  const HandleRateClick = useCallback((e) => {
-    setRateValue(() => e.target.value);
-  }, []);
-  console.log(rateValue);
   const stars = [
     { score: 1, id: "star1" },
     { score: 2, id: "star2" },
@@ -20,82 +21,151 @@ const ContactUs = () => {
     { score: 4, id: "star4" },
     { score: 5, id: "star5" },
   ];
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const HandleRateClick = (e) => {
+    setFormData((prevData) => ({ ...prevData, rating: Number(e.target.value) }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Call the API to send the form data to the server
+    fetch("http://localhost:5000/api/send-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data); // You can handle the response here if needed
+      })
+      .catch((error) => console.error(error));
+  };
+
   return (
-    <section className="flex flex-col gap-[4rem]  w-full  bg-gradient-to-tl to-[#7cbde6] from-slate-300/10 w h-[100%] xl:px-[10rem] lg:px-[2rem] px-[1rem] py-[5rem]">
+    <section className="flex flex-col gap-[4rem] w-full bg-gradient-to-tl to-[#7cbde6] from-slate-300/10 w h-[100%] xl:px-[10rem] lg:px-[2rem] px-[1rem] py-[5rem]">
       <div className="flex lg:flex-col flex-col-reverse">
         <div className="flex lg:flex-row flex-col-reverse justify-between items-center gap-[2rem] lg:gap-0">
-          <div className="md:w-[30%] w-[100%] flex lg:flex-col flex-col md:flex-row  md:items-start items-center justify-evenly md:gap-[5rem] gap-[1rem]">
-            <div className=" flex  md:flex-row flex-col  gap-[2rem] md:text-start text-center md:items-start items-center">
-              <AiOutlineMail className=" text-[2rem]  font-bold" />
+          <div className="md:w-[30%] w-[100%] flex lg:flex-col flex-col md:flex-row md:items-start items-center justify-evenly md:gap-[5rem] gap-[1rem]">
+            <div className="flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
+              <AiOutlineMail className="text-[2rem] font-bold" />
               <div className="flex-col md:w-[80%] w-[100%]">
-                <h2 className="text-2xl"> Chat with us</h2>
+                <h2 className="text-2xl">Chat with us</h2>
                 <p>k.security@icloud.com</p>
               </div>
             </div>
-            <div className=" flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
-              <BsTelephoneOutbound className=" text-[2rem]  font-bold" />
+            <div className="flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
+              <BsTelephoneOutbound className="text-[2rem] font-bold" />
               <div className="flex-col md:w-[80%] w-[100%]">
-                <h2 className="text-2xl"> Phone</h2>
+                <h2 className="text-2xl">Phone</h2>
                 <p>+1(905)321-5540</p>
               </div>
             </div>
-            <div className=" flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
-              <SlLocationPin className=" text-[2rem]  font-bold" />
+            <div className="flex md:flex-row flex-col gap-[2rem] md:text-start text-center md:items-start items-center">
+              <SlLocationPin className="text-[2rem] font-bold" />
               <div className="flex-col md:w-[80%] w-[100%] ">
-                <h2 className="text-2xl"> Office</h2>
+                <h2 className="text-2xl">Office</h2>
                 <p>xyz@street.com</p>
               </div>
             </div>
           </div>
-          <form className="md:w-[80%] lg:w-[50%]   w-[100%] md:mx-[4rem]  md:px-[4rem] p-2 m-2 bg-black rounded-xl">
+          <form onSubmit={handleSubmit} className="md:w-[80%] lg:w-[50%] w-[100%] md:mx-[4rem] md:px-[4rem] p-2 m-2 bg-black rounded-xl">
             <div className="border-b border-gray-900/10 pb-12">
-              <div class="input-container ic1">
-                <input
-                  placeholder=""
-                  type="text"
-                  class="input"
-                  id="firstname"
-                />
-                <div class="cut"></div>
-                <label class="iLabel" for="yourname">
-                  Your Name
-                </label>
-              </div>
+              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div className="sm:col-span-3">
+                  <label
+                    htmlFor="first-name"
+                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
+                  >
+                    First name
+                  </label>
+                  <div className="mt-2">
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="first-name"
+                      autoComplete="given-name"
+                      className="block bg-transparent w-full rounded-md p-[1rem] py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
 
-              <div class="input-container ic2 ">
-                <input placeholder="" type="text" class="input" id="email" />
-                <div class="cut"></div>
-                <label class="iLabel" for="email">
-                  Your Email
-                </label>
+                <div className="sm:col-span-3">
+                  <label
+                    htmlFor="last-name"
+                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
+                  >
+                    Last name
+                  </label>
+                  <div className="mt-2">
+                    <input
+                      type="text"
+                      name="lastName"
+                      id="last-name"
+                      autoComplete="family-name"
+                      className="block bg-transparent w-full rounded-md py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 p-[1rem] placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-3">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
+                  >
+                    Email address
+                  </label>
+                  <div className="mt-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      className="block bg-transparent w-full rounded-md py-1.5 ttext-whiteshadow-sm ring-1 ring-inset p-[1rem] ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+                <div className="col-span-full">
+                  <label
+                    htmlFor="about"
+                    className="block text-sm font-medium leading-6 text-gray-300 cursor-pointer"
+                  >
+                    Message
+                  </label>
+                  <div className="mt-2">
+                    <textarea
+                      id="about"
+                      name="message"
+                      rows={5}
+                      className="block bg-transparent w-full rounded-md border-0 py-1.5 ttext-whiteshadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6 p-[1rem]"
+                      defaultValue={formData.message}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    Write a few sentences about your need.
+                  </p>
+                </div>
               </div>
-              <div class="input-container ic2">
-                <input placeholder="" type="text" class="input" id="email" />
-                <div class="cut cut-short"></div>
-                <label class="iLabel" for="email">
-                  Subject
-                </label>
-              </div>
-              <div class=" ic2 relative ">
-                <textarea
-                  placeholder=""
-                  cols={10}
-                  class="input-message input-cont"
-                  id="message"
-                />
-                <div class="cut cut-short"></div>
-                <label class="iLabel" for="message">
-                  Message
-                </label>
-              </div>
-              <div className="flex justify-center mt-6 ">
-                <button
-                  class=" mx-auto bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md"
-                  type="text"
-                >
-                  submit
-                </button>
-              </div>
+            </div>
+
+            <div className="my-6 flex items-center justify-center gap-x-6">
+              <button className="btn1 py-4" style={{ verticalAlign: "middle" }} type="submit">
+                <span>Send</span>
+              </button>
             </div>
           </form>
         </div>
@@ -125,31 +195,29 @@ const ContactUs = () => {
       </div>
       <form>
         <h3 className="text-center text-2xl font-semibold mb-[4rem]">
-          Your feed back is valuable to us:
+          Your feedback is valuable to us:
         </h3>
         <div>
           <div>
-            <p className="mb-4"> please rate us:</p>
+            <p className="mb-4"> Please rate us:</p>
             <div className="flex gap-[2rem] my-[1rem]">
               <div className="px-[1rem] py-[0rem] rounded-3xl w-fit border-2 border-[#1875FF]">
-                <div class="rating ">
-                  {stars.map((star, index) => {
-                    return (
-                      <>
-                        <input
-                          value={star.score}
-                          onClick={HandleRateClick}
-                          name="rating"
-                          id={star.id}
-                          type="radio"
-                        />
-                        <label for={star.id} />
-                      </>
-                    );
-                  })}
+                <div className="rating">
+                  {stars.map((star, index) => (
+                    <React.Fragment key={index}>
+                      <input
+                        value={star.score}
+                        onClick={HandleRateClick}
+                        name="rating"
+                        id={star.id}
+                        type="radio"
+                      />
+                      <label htmlFor={star.id} />
+                    </React.Fragment>
+                  ))}
                 </div>
               </div>
-              <button class="btn1" style={{ "vertical-align": "middle" }}>
+              <button className="btn1" style={{ verticalAlign: "middle" }} type="submit">
                 <span>Submit</span>
               </button>
             </div>
@@ -157,14 +225,16 @@ const ContactUs = () => {
           <div>
             <p className="mb-4">What should we do to improve:</p>
 
-            <div class="bg-transparent rounded-lg subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
+            <div className="bg-transparent subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
               <textarea
-                placeholder="Your contibutions..."
-                className="subscribe-input focus:outline-none bg-transparent border-[#1867df] border rounded-xl w-full p-4 h-[10rem]  "
+                placeholder="Your contributions..."
+                className="subscribe-input bg-transparent border-[#1867df] border-2 rounded-xl w-full p-4 h-[10rem]"
                 name="contributions"
+                value={formData.contributions}
+                onChange={handleChange}
               />
               <br />
-              <div class="submit-btn">SUBMIT</div>
+              <div className="submit-btn">SUBMIT</div>
             </div>
           </div>
         </div>
