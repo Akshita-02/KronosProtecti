@@ -50,13 +50,13 @@ export const Slider1 = ({ height, sliderImages }) => {
   };
   return (
     <>
-      <div className=" w-full h-full rounded-3xl ">
+      <div className={`${height} rounded-3xl `}>
         <Slider {...settings}>
           {sliderImages.map((image, index) => {
             return (
               <img
                 key={index}
-                className={`rounded-3xl w-full ${height}  object-cover  transition-all`}
+                className={`rounded-3xl ${height}   object-top object-cover  transition-all`}
                 src={image.image}
                 alt="/"
               />
