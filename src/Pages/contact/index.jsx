@@ -76,7 +76,10 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <form onSubmit={handleSubmit} className="md:w-[80%] lg:w-[50%] w-[100%] md:mx-[4rem] md:px-[4rem] p-2 m-2 bg-black rounded-xl">
+          <form
+            onSubmit={handleSubmit}
+            className="md:w-[80%] lg:w-[50%] w-[100%] md:mx-[4rem] md:px-[4rem] p-2 m-2 bg-black rounded-xl"
+          >
             <div className="border-b border-gray-900/10 pb-12">
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
@@ -163,7 +166,11 @@ const ContactUs = () => {
             </div>
 
             <div className="my-6 flex items-center justify-center gap-x-6">
-              <button className="btn1 py-4" style={{ verticalAlign: "middle" }} type="submit">
+              <button
+                className="btn1 py-4"
+                style={{ verticalAlign: "middle" }}
+                type="submit"
+              >
                 <span>Send</span>
               </button>
             </div>
@@ -199,25 +206,27 @@ const ContactUs = () => {
         </h3>
         <div>
           <div>
-            <p className="mb-4"> Please rate us:</p>
+            <p className="mb-4"> please rate us:</p>
             <div className="flex gap-[2rem] my-[1rem]">
               <div className="px-[1rem] py-[0rem] rounded-3xl w-fit border-2 border-[#1875FF]">
-                <div className="rating">
-                  {stars.map((star, index) => (
-                    <React.Fragment key={index}>
-                      <input
-                        value={star.score}
-                        onClick={HandleRateClick}
-                        name="rating"
-                        id={star.id}
-                        type="radio"
-                      />
-                      <label htmlFor={star.id} />
-                    </React.Fragment>
-                  ))}
+                <div class="rating ">
+                  {stars.map((star, index) => {
+                    return (
+                      <>
+                        <input
+                          value={star.score}
+                          onClick={HandleRateClick}
+                          name="rating"
+                          id={star.id}
+                          type="radio"
+                        />
+                        <label for={star.id} />
+                      </>
+                    );
+                  })}
                 </div>
               </div>
-              <button className="btn1" style={{ verticalAlign: "middle" }} type="submit">
+              <button class="btn1" style={{ "vertical-align": "middle" }}>
                 <span>Submit</span>
               </button>
             </div>
@@ -225,16 +234,14 @@ const ContactUs = () => {
           <div>
             <p className="mb-4">What should we do to improve:</p>
 
-            <div className="bg-transparent subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
+            <div class="bg-transparent rounded-lg subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
               <textarea
-                placeholder="Your contributions..."
-                className="subscribe-input bg-transparent border-[#1867df] border-2 rounded-xl w-full p-4 h-[10rem]"
+                placeholder="Your contibutions..."
+                className="subscribe-input focus:outline-none bg-transparent border-[#1867df] border rounded-xl w-full p-4 h-[10rem]  "
                 name="contributions"
-                value={formData.contributions}
-                onChange={handleChange}
               />
               <br />
-              <div className="submit-btn">SUBMIT</div>
+              <div class="submit-btn">SUBMIT</div>
             </div>
           </div>
         </div>
