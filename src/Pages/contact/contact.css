@@ -215,7 +215,7 @@
 /* position */
 
 .submit:active {
-      background-color: #06b;
+      background-color: rgb(44, 50, 54);
 }
 
 
@@ -242,4 +242,9 @@
 .subscribe .submit-btn:hover {
       background-color: #170996;
       box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+}
+
+.subscribe .submit-btn:active, .btn1:active {
+      background-color: #454355;
+      
 }

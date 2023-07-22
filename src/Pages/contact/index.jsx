@@ -28,7 +28,10 @@ const ContactUs = () => {
   };
 
   const HandleRateClick = (e) => {
-    setFormData((prevData) => ({ ...prevData, rating: Number(e.target.value) }));
+    setFormData((prevData) => ({
+      ...prevData,
+      rating: Number(e.target.value),
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -212,8 +215,9 @@ const ContactUs = () => {
                 <div class="rating ">
                   {stars.map((star, index) => {
                     return (
-                      <>
+                      <div>
                         <input
+                          key={index}
                           value={star.score}
                           onClick={HandleRateClick}
                           name="rating"
@@ -221,14 +225,14 @@ const ContactUs = () => {
                           type="radio"
                         />
                         <label for={star.id} />
-                      </>
+                      </div>
                     );
                   })}
                 </div>
               </div>
-              <button class="btn1" style={{ "vertical-align": "middle" }}>
+              {/* <button class="btn1" style={{ "vertical-align": "middle" }}>
                 <span>Submit</span>
-              </button>
+              </button> */}
             </div>
           </div>
           <div>
