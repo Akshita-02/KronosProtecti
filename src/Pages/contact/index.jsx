@@ -5,14 +5,12 @@ import { SlLocationPin } from "react-icons/sl";
 import "./contact.css";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-    rating: 0,
-    contributions: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   FirstName: "",
+  //   LastName: "",
+  //   Email: "",
+  //   Message: "",
+  // });
 
   const stars = [
     { score: 1, id: "star1" },
@@ -22,32 +20,33 @@ const ContactUs = () => {
     { score: 5, id: "star5" },
   ];
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({ ...prevData, [name]: value }));
+  //   console.log(name, value);
+  // };
 
   const HandleRateClick = (e) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      rating: Number(e.target.value),
-    }));
+    console.log(e.target.value);
   };
 
   const handleSubmit = (e) => {
+    console.log("clicked");
+    const formEle = document.querySelector("form");
     e.preventDefault();
-
+    const formData = new FormData(formEle);
     // Call the API to send the form data to the server
-    fetch("http://localhost:5000/api/send-form", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
+    fetch(
+      "https://script.google.com/macros/s/AKfycbxx7F0ITVVX42mr7lHve75dA_oLRz-NbDudJglO0W6QCohLouaY6GqBEsZMTkUYA2fA/exec",
+      {
+        method: "POST",
+
+        body: formData,
+      }
+    )
+      .then((response) => console.log(response))
       .then((data) => {
-        console.log(data); // You can handle the response here if needed
+        console.log(data, formData); // You can handle the response here if needed
       })
       .catch((error) => console.error(error));
   };
@@ -80,7 +79,10 @@ const ContactUs = () => {
             </div>
           </div>
           <form
-            onSubmit={handleSubmit}
+            action="https://script.google.com/macros/s/AKfycbxx7F0ITVVX42mr7lHve75dA_oLRz-NbDudJglO0W6QCohLouaY6GqBEsZMTkUYA2fA/exec"
+            onSubmit={(e) => {
+              handleSubmit(e);
+            }}
             className="md:w-[80%] lg:w-[50%] w-[100%] md:mx-[4rem] md:px-[4rem] p-2 m-2 bg-black rounded-xl"
           >
             <div className="border-b border-gray-900/10 pb-12">
@@ -95,12 +97,9 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <input
                       type="text"
-                      name="firstName"
+                      name="FirstName"
                       id="first-name"
-                      autoComplete="given-name"
                       className="block bg-transparent w-full rounded-md p-[1rem] py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
-                      value={formData.firstName}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -115,12 +114,9 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <input
                       type="text"
-                      name="lastName"
+                      name="LastName"
                       id="last-name"
-                      autoComplete="family-name"
                       className="block bg-transparent w-full rounded-md py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 p-[1rem] placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
-                      value={formData.lastName}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -135,12 +131,9 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <input
                       id="email"
-                      name="email"
+                      name="Email"
                       type="email"
-                      autoComplete="email"
                       className="block bg-transparent w-full rounded-md py-1.5 ttext-whiteshadow-sm ring-1 ring-inset p-[1rem] ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
-                      value={formData.email}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -154,11 +147,9 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <textarea
                       id="about"
-                      name="message"
+                      name="Message"
                       rows={5}
                       className="block bg-transparent w-full rounded-md border-0 py-1.5 ttext-whiteshadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6 p-[1rem]"
-                      defaultValue={formData.message}
-                      onChange={handleChange}
                     />
                   </div>
                   <p className="mt-3 text-sm leading-6 text-gray-600">
@@ -203,7 +194,7 @@ const ContactUs = () => {
           </p>
         </div>
       </div>
-      <form>
+      <div>
         <h3 className="text-center text-2xl font-semibold mb-[4rem]">
           Your feedback is valuable to us:
         </h3>
@@ -238,18 +229,18 @@ const ContactUs = () => {
           <div>
             <p className="mb-4">What should we do to improve:</p>
 
-            <div class="bg-transparent rounded-lg subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
+            <div className="bg-transparent rounded-lg subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
               <textarea
                 placeholder="Your contibutions..."
                 className="subscribe-input focus:outline-none bg-transparent border-[#1867df] border rounded-xl w-full p-4 h-[10rem]  "
                 name="contributions"
               />
               <br />
-              <div class="submit-btn">SUBMIT</div>
+              <div className="submit-btn">SUBMIT</div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </section>
   );
 };
