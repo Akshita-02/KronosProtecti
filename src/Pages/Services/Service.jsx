@@ -74,7 +74,7 @@ const Service = () => {
           <h2>
             Take a Look At <span>Services We Provided</span>
           </h2>
-          <p>We are to protect with courage & to serve with compassion.</p>
+          <p>We are here to protect with courage & to serve with compassion.</p>
           <p>We specialize in security and armed bodyguard service.</p>
         </div>
         <div className="service-card">
@@ -82,81 +82,72 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo1.png" alt="" />
             </div>
-            <h3>Security Services</h3>
+            <h3>Private Investigation Services</h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+             We can help you find legal and efficient solutions to your problems using expert private investigator{" "}
             </p>
           </div>
           <div className="service2">
             <div className="logo">
               <img src="../../../image/s-logo2.png" alt="" />
             </div>
-            <h3>Security Guards</h3>
+            <h3>Personal Investigation Services</h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
-            </p>
+Personal affairs, missing family members and mateimonial investigations. Affordable and legal.            </p>
           </div>
           <div className="service3">
             <div className="logo">
               <img src="../../../image/s-logo3.png" alt="" />
             </div>
 
-            <h3>Special Events</h3>
+            <h3>Armed Security Guard </h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+           We access each client's  security needs and match skilled professional security officers to accommodate their requirementss.
             </p>
           </div>
           <div className="service4">
             <div className="logo">
               <img src="../../../image/s-logo4.png" alt="" />{" "}
             </div>
-            <h3>VIP Close Protection</h3>
+            <h3>Events security</h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+             Nsg security Services have operated events security services at events and venues from small to large scale.
             </p>
           </div>
           <div className="service5">
             <div className="logo">
               <img src="../../../image/s-logo5.png" alt="" />
             </div>{" "}
-            <h3>Condo Security</h3>
+            <h3>Commercial Properties </h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator.{" "}
+            Kronos Protection provides specialized commercial property security services for corporate buildings, office towers, research and manufacturing facilities and warehouses.
             </p>
           </div>
           <div className="service6">
             <div className="logo">
               <img src="../../../image/s-logo6.png" alt="" />
             </div>
-            <h3>Retail & Mall Security</h3>
+            <h3>Loss Prevention</h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+            Security loss prvention is an essential buiness function that helps companies minimize risk, prevent theft and increase the overall safty of the company.
             </p>
           </div>
           <div className="service7">
             <div className="logo">
               <img src="../../../image/s-logo7.png" alt="" />
             </div>
-            <h3>Commercial Security</h3>
+            <h3>VIP Close Protection</h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+             Our VIP close protection team are made up of highly trained, experienced and professional security personnel. Our close protection officers understand the needs of our clients.
             </p>
           </div>
           <div className="service8">
             <div className="logo">
               <img src="../../../image/s-logo8.png" alt="" />
             </div>
-            <h3>Residential Security</h3>
+            <h3>Concert Security</h3>
             <p>
-              We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+             We understand the importance of providing a safe and secure environment for holding your concert or special event.
             </p>
           </div>
         </div>
