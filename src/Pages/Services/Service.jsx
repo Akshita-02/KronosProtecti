@@ -126,7 +126,7 @@ const Service = () => {
             <h3>Condo Security</h3>
             <p>
               We can help you find legal and efficient solutions to your
-              problems using expert private investigator{" "}
+              problems using expert private investigator.{" "}
             </p>
           </div>
           <div className="service6">
