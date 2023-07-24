@@ -24,13 +24,13 @@ const Footer = () => {
           </div>
           <div className="social-contact-middke">
             <div className="social-icon">
-              <a href="https://twitter.com">
+              <a href="https://instagram.com/kronos_security7?igshid=MzRlODBiNWFlZA==">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://instagram.com">
+              <a href="https://instagram.com/kronos_security7?igshid=MzRlODBiNWFlZA==">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com">
+              <a href="https://instagram.com/kronos_security7?igshid=MzRlODBiNWFlZA==">
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>
