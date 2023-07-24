@@ -46,7 +46,7 @@ const Service = () => {
           <p>
             "Security is essential in our ever changing world as it promotes a
             safe and secure environment for those who enjoy festivals, events,
-            concerts and night life"
+            concerts and night life."
           </p>
           <p>
             Welcome to <strong>Kronos Security</strong>. We are a professional
@@ -54,7 +54,7 @@ const Service = () => {
             Kronos security is an elite security provider specializing in risk
             assessments, crisis management, safety and security concepts for
             large or small events and facilities within the corporate,
-            instititional, retail and private sector.
+            institutional, retail and private sector.
           </p>
           <button className="btn" onClick={handleContactClick}>
             Contact Us
@@ -82,7 +82,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo1.png" alt="" />
             </div>
-            <h3>Private Investigation Service</h3>
+            <h3>Security Services</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -92,7 +92,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo2.png" alt="" />
             </div>
-            <h3>Private Investigation Service</h3>
+            <h3>Security Guards</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -103,7 +103,7 @@ const Service = () => {
               <img src="../../../image/s-logo3.png" alt="" />
             </div>
 
-            <h3>Private Investigation Service</h3>
+            <h3>Special Events</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -113,7 +113,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo4.png" alt="" />{" "}
             </div>
-            <h3>Private Investigation Service</h3>
+            <h3>VIP Close Protection</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -123,7 +123,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo5.png" alt="" />
             </div>{" "}
-            <h3>Private Investigation Service</h3>
+            <h3>Condo Security</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -133,7 +133,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo6.png" alt="" />
             </div>
-            <h3>Private Investigation Service</h3>
+            <h3>Retail & Mall Security</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -143,7 +143,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo7.png" alt="" />
             </div>
-            <h3>Private Investigation Service</h3>
+            <h3>Commercial Security</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
@@ -153,7 +153,7 @@ const Service = () => {
             <div className="logo">
               <img src="../../../image/s-logo8.png" alt="" />
             </div>
-            <h3>Private Investigation Service</h3>
+            <h3>Residential Security</h3>
             <p>
               We can help you find legal and efficient solutions to your
               problems using expert private investigator{" "}
