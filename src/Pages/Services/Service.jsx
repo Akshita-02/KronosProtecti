@@ -93,7 +93,7 @@ const Service = () => {
             </div>
             <h3>Personal Investigation Services</h3>
             <p>
-Personal affairs, missing family members and mateimonial investigations. Affordable and legal.            </p>
+Personal affairs, missing family members, and matrimonial investigations. Affordable and legal.            </p>
           </div>
           <div className="service3">
             <div className="logo">
@@ -102,7 +102,7 @@ Personal affairs, missing family members and mateimonial investigations. Afforda
 
             <h3>Armed Security Guard </h3>
             <p>
-           We access each client's  security needs and match skilled professional security officers to accommodate their requirementss.
+           We access each client's  security needs and match skilled professional security officers to accommodate their requirements.
             </p>
           </div>
           <div className="service4">
@@ -111,7 +111,7 @@ Personal affairs, missing family members and mateimonial investigations. Afforda
             </div>
             <h3>Events security</h3>
             <p>
-             Nsg security Services have operated events security services at events and venues from small to large scale.
+             Nsg Security Services have operated events security services at events and venues from small to large scale.
             </p>
           </div>
           <div className="service5">
@@ -129,7 +129,7 @@ Personal affairs, missing family members and mateimonial investigations. Afforda
             </div>
             <h3>Loss Prevention</h3>
             <p>
-            Security loss prvention is an essential buiness function that helps companies minimize risk, prevent theft and increase the overall safty of the company.
+            Security loss prevention is an essential business function that helps companies minimize risk, prevent theft and increase the overall safety of the company.
             </p>
           </div>
           <div className="service7">
@@ -138,7 +138,7 @@ Personal affairs, missing family members and mateimonial investigations. Afforda
             </div>
             <h3>VIP Close Protection</h3>
             <p>
-             Our VIP close protection team are made up of highly trained, experienced and professional security personnel. Our close protection officers understand the needs of our clients.
+             Our VIP close protection team is made up of highly trained, experienced, and professional security personnel. Our close protection officers understand the needs of our clients.
             </p>
           </div>
           <div className="service8">
