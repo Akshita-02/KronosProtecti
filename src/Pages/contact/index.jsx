@@ -55,7 +55,7 @@ const ContactUs = () => {
     const stringed = JSON.stringify(data);
 
     const url =
-      "https://script.google.com/macros/s/AKfycbzCe4DT3w5rIZd7GnBrw0iLnhmAS1rUBUiVI6yuvFlz3PZy77hb9pYGkODcNeuYMpbc/exec";
+      "https://script.google.com/macros/s/AKfycby9I2XKHSDYPfDF_z5Gxqj5yA8HVpUnh1sgLUHOS5s1h-BYttOC_LD7Fb7_oXntTRnO/exec";
 
     try {
       const response = await fetch(url, {
@@ -66,10 +66,10 @@ const ContactUs = () => {
       if (response.ok) {
         // Read the response body as JSON
         setData({
-          FirstName: "",
-          LastName: "",
-          Email: "",
-          Message: "",
+          FirstName: " ",
+          LastName: " ",
+          Email: " ",
+          Message: " ",
         });
         const responseData = await response.text();
         //console.log("Response JSON:", responseData);
@@ -87,7 +87,7 @@ const ContactUs = () => {
     const stringed = JSON.stringify(rateData);
 
     const url =
-      "https://script.google.com/macros/s/AKfycbzCe4DT3w5rIZd7GnBrw0iLnhmAS1rUBUiVI6yuvFlz3PZy77hb9pYGkODcNeuYMpbc/exec";
+      "https://script.google.com/macros/s/AKfycby9I2XKHSDYPfDF_z5Gxqj5yA8HVpUnh1sgLUHOS5s1h-BYttOC_LD7Fb7_oXntTRnO/exec";
 
     try {
       const response = await fetch(url, {
