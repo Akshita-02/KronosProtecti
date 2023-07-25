@@ -17,21 +17,21 @@ const ContactUs = () => {
   });
 
   const stars = [
-    { score: 1, id: "star1" },
-    { score: 2, id: "star2" },
-    { score: 3, id: "star3" },
-    { score: 4, id: "star4" },
     { score: 5, id: "star5" },
+    { score: 4, id: "star4" },
+    { score: 3, id: "star3" },
+    { score: 2, id: "star2" },
+    { score: 1, id: "star1" },
   ];
 
   // const handleChange = (e) => {
   //   const { name, value } = e.target;
   //   setFormData((prevData) => rating({ ...prevData, [name]: value }));
-  //   console.log(name, value);
+  //   //console.log(name, value);
   // };
 
   const handleRateDataChange = (event) => {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     const value = event.target.value;
     const Name = event.target.name;
     setRateData((prevData) => ({
@@ -48,12 +48,10 @@ const ContactUs = () => {
       [Name]: value,
     }));
   };
-  console.log(data);
+  //console.log(data);
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const formEle = document.querySelector("form");
-    const formData = new FormData(formEle);
-    console.log(formData);
+    //console.log("clicked");
     const stringed = JSON.stringify(data);
 
     const url =
@@ -74,18 +72,18 @@ const ContactUs = () => {
           Message: "",
         });
         const responseData = await response.text();
-        console.log("Response JSON:", responseData);
+        //console.log("Response JSON:", responseData);
       } else {
-        console.log("Failed to send data.");
+        //console.log("Failed to send data.");
       }
     } catch (error) {
-      console.error("Error while sending data:", error);
+      //console.error("Error while sending data:", error);
     }
   };
 
   const handleRateSubmit = async (event) => {
     event.preventDefault();
-    console.log(rateData);
+    //console.log(rateData);
     const stringed = JSON.stringify(rateData);
 
     const url =
@@ -101,15 +99,15 @@ const ContactUs = () => {
         // Read the response body as JSON
         setRateData({
           Rate: "",
-          FeedBack:""
+          FeedBack: "",
         });
         const responseData = await response.text();
-        console.log("Response JSON:", responseData);
+        //////console.log("Rate JSON:", responseData);
       } else {
-        console.log("Failed to send data.");
+        //console.log("Failed to send data.");
       }
     } catch (error) {
-      console.error("Error while sending data:", error);
+      //console.error("Error while sending data:", error);
     }
   };
 
@@ -227,13 +225,13 @@ const ContactUs = () => {
             </div>
 
             <div className="my-6 flex items-center justify-center gap-x-6">
-              <div
+              <button
                 className="btn1 py-4"
                 style={{ verticalAlign: "middle" }}
                 type="submit"
               >
                 <span>Send</span>
-              </div>
+              </button>
             </div>
           </form>
         </div>
@@ -270,7 +268,7 @@ const ContactUs = () => {
             <p className="mb-4"> please rate us:</p>
             <div className="flex gap-[2rem] my-[1rem]">
               <div className="px-[1rem] py-[0rem] rounded-3xl w-fit border-2 border-[#1875FF]">
-                <div class="rating ">
+                <div class="rating flex-reverse ">
                   {stars.map((star, index) => {
                     return (
                       <>
