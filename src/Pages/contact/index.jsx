@@ -5,12 +5,16 @@ import { SlLocationPin } from "react-icons/sl";
 import "./contact.css";
 
 const ContactUs = () => {
-  // const [formData, setFormData] = useState({
-  //   FirstName: "",
-  //   LastName: "",
-  //   Email: "",
-  //   Message: "",
-  // });
+  const [data, setData] = useState({
+    FirstName: "",
+    LastName: "",
+    Email: "",
+    Message: "",
+  });
+  const [rateData, setRateData] = useState({
+    Rate: "",
+    FeedBack: "",
+  });
 
   const stars = [
     { score: 1, id: "star1" },
@@ -22,33 +26,91 @@ const ContactUs = () => {
 
   // const handleChange = (e) => {
   //   const { name, value } = e.target;
-  //   setFormData((prevData) => ({ ...prevData, [name]: value }));
+  //   setFormData((prevData) => rating({ ...prevData, [name]: value }));
   //   console.log(name, value);
   // };
 
-  const HandleRateClick = (e) => {
-    console.log(e.target.value);
+  const handleRateDataChange = (event) => {
+    console.log(event.target.value);
+    const value = event.target.value;
+    const Name = event.target.name;
+    setRateData((prevData) => ({
+      ...prevData,
+      [Name]: value,
+    }));
   };
 
-  const handleSubmit = (e) => {
-    console.log("clicked");
+  const handleChange = (event) => {
+    const value = event.target.value;
+    const Name = event.target.name;
+    setData((prevData) => ({
+      ...prevData,
+      [Name]: value,
+    }));
+  };
+  console.log(data);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const formEle = document.querySelector("form");
-    e.preventDefault();
     const formData = new FormData(formEle);
-    // Call the API to send the form data to the server
-    fetch(
-      "https://script.google.com/macros/s/AKfycbxx7F0ITVVX42mr7lHve75dA_oLRz-NbDudJglO0W6QCohLouaY6GqBEsZMTkUYA2fA/exec",
-      {
-        method: "POST",
+    console.log(formData);
+    const stringed = JSON.stringify(data);
 
-        body: formData,
+    const url =
+      "https://script.google.com/macros/s/AKfycbwQ6o79YcrxHG1SgacSxL6yvrMLB-buD-3u1SdhTzl31GS7nd80wiClbD2n2He8IJm6/exec";
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        body: stringed,
+      });
+
+      if (response.ok) {
+        // Read the response body as JSON
+        setData({
+          FirstName: "",
+          LastName: "",
+          Email: "",
+          Message: "",
+        });
+        const responseData = await response.text();
+        console.log("Response JSON:", responseData);
+      } else {
+        console.log("Failed to send data.");
       }
-    )
-      .then((response) => console.log(response))
-      .then((data) => {
-        console.log(data, formData); // You can handle the response here if needed
-      })
-      .catch((error) => console.error(error));
+    } catch (error) {
+      console.error("Error while sending data:", error);
+    }
+  };
+
+  const handleRateSubmit = async (event) => {
+    event.preventDefault();
+    console.log(rateData);
+    const stringed = JSON.stringify(rateData);
+
+    const url =
+      "https://script.google.com/macros/s/AKfycbwwLUGq9BpJCIpZxVVvrtJi6L-cJM9Dy2bb-ZqDGuMOY5Vwd9K0UmFiT2yaxmmRSYk/exec";
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        body: stringed,
+      });
+
+      if (response.ok) {
+        // Read the response body as JSON
+        setRateData({
+          Rate: "",
+          FeedBack:""
+        });
+        const responseData = await response.text();
+        console.log("Response JSON:", responseData);
+      } else {
+        console.log("Failed to send data.");
+      }
+    } catch (error) {
+      console.error("Error while sending data:", error);
+    }
   };
 
   return (
@@ -79,10 +141,7 @@ const ContactUs = () => {
             </div>
           </div>
           <form
-            action="https://script.google.com/macros/s/AKfycbxx7F0ITVVX42mr7lHve75dA_oLRz-NbDudJglO0W6QCohLouaY6GqBEsZMTkUYA2fA/exec"
-            onSubmit={(e) => {
-              handleSubmit(e);
-            }}
+            onSubmit={handleSubmit}
             className="md:w-[80%] lg:w-[50%] w-[100%] md:mx-[4rem] md:px-[4rem] p-2 m-2 bg-black rounded-xl"
           >
             <div className="border-b border-gray-900/10 pb-12">
@@ -96,6 +155,8 @@ const ContactUs = () => {
                   </label>
                   <div className="mt-2">
                     <input
+                      onChange={handleChange}
+                      value={data.FirstName}
                       type="text"
                       name="FirstName"
                       id="first-name"
@@ -113,6 +174,8 @@ const ContactUs = () => {
                   </label>
                   <div className="mt-2">
                     <input
+                      value={data.LastName}
+                      onChange={handleChange}
                       type="text"
                       name="LastName"
                       id="last-name"
@@ -130,6 +193,8 @@ const ContactUs = () => {
                   </label>
                   <div className="mt-2">
                     <input
+                      value={data.Email}
+                      onChange={handleChange}
                       id="email"
                       name="Email"
                       type="email"
@@ -146,6 +211,8 @@ const ContactUs = () => {
                   </label>
                   <div className="mt-2">
                     <textarea
+                      value={data.Message}
+                      onChange={handleChange}
                       id="about"
                       name="Message"
                       rows={5}
@@ -160,13 +227,13 @@ const ContactUs = () => {
             </div>
 
             <div className="my-6 flex items-center justify-center gap-x-6">
-              <button
+              <div
                 className="btn1 py-4"
                 style={{ verticalAlign: "middle" }}
                 type="submit"
               >
                 <span>Send</span>
-              </button>
+              </div>
             </div>
           </form>
         </div>
@@ -196,9 +263,9 @@ const ContactUs = () => {
       </div>
       <div>
         <h3 className="text-center text-2xl font-semibold mb-[4rem]">
-          Your feedback is valuable to us:
+          Your FeedBack is valuable to us:
         </h3>
-        <div>
+        <form onSubmit={handleRateSubmit}>
           <div>
             <p className="mb-4"> please rate us:</p>
             <div className="flex gap-[2rem] my-[1rem]">
@@ -206,17 +273,17 @@ const ContactUs = () => {
                 <div class="rating ">
                   {stars.map((star, index) => {
                     return (
-                      <div>
+                      <>
                         <input
                           key={index}
                           value={star.score}
-                          onClick={HandleRateClick}
-                          name="rating"
+                          onClick={handleRateDataChange}
+                          name="Rate"
                           id={star.id}
                           type="radio"
                         />
                         <label for={star.id} />
-                      </div>
+                      </>
                     );
                   })}
                 </div>
@@ -231,15 +298,19 @@ const ContactUs = () => {
 
             <div className="bg-transparent rounded-lg subscribe focus:outline-none text-white w-full xl:w-[30rem] md:w-[50%]">
               <textarea
+                onChange={handleRateDataChange}
+                value={rateData.FeedBack}
                 placeholder="Your contibutions..."
                 className="subscribe-input focus:outline-none bg-transparent border-[#1867df] border rounded-xl w-full p-4 h-[10rem]  "
-                name="contributions"
+                name="FeedBack"
               />
               <br />
-              <div className="submit-btn">SUBMIT</div>
+              <button type="submit" className="submit-btn">
+                SUBMIT
+              </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );
