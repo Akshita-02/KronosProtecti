@@ -37,7 +37,7 @@ const AboutUs = () => {
                 At Kronos Protection, our mission is to safeguard individuals
                 and organizations by providing comprehensive human security
                 solutions. We are dedicated to ensuring the safety, well-being,
-                and peace of mind of our clients in today’s ever-changing world.
+                and peace of mind for our clients in today’s ever-changing world.
                 Through the expertise of our highly trained professionals and
                 the use of advanced technologies, we create a secure environment
                 where individuals can thrive and organizations can operate with
