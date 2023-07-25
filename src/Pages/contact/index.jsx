@@ -65,14 +65,14 @@ const ContactUs = () => {
 
       if (response.ok) {
         // Read the response body as JSON
-        setData({
-          FirstName: " ",
-          LastName: " ",
-          Email: " ",
-          Message: " ",
+        setRateData({
+          FirstName: "",
+          LastName: "",
+          Email:"",
+          Message:"",
         });
         const responseData = await response.text();
-        //console.log("Response JSON:", responseData);
+        //////console.log("Rate JSON:", responseData);
       } else {
         //console.log("Failed to send data.");
       }
@@ -80,7 +80,7 @@ const ContactUs = () => {
       //console.error("Error while sending data:", error);
     }
   };
-
+  
   const handleRateSubmit = async (event) => {
     event.preventDefault();
     //console.log(rateData);
