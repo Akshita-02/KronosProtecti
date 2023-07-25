@@ -55,7 +55,7 @@ const ContactUs = () => {
     const stringed = JSON.stringify(data);
 
     const url =
-      "https://script.google.com/macros/s/AKfycbyNQxnbuU3HUto3P-WRajfoz6CHVu1PVeYQgF6QU-jBOS1s63uKtiq8EhRQV_Kl1Z93/exec";
+      "https://script.google.com/macros/s/AKfycbzCe4DT3w5rIZd7GnBrw0iLnhmAS1rUBUiVI6yuvFlz3PZy77hb9pYGkODcNeuYMpbc/exec";
 
     try {
       const response = await fetch(url, {
@@ -87,7 +87,7 @@ const ContactUs = () => {
     const stringed = JSON.stringify(rateData);
 
     const url =
-      "https://script.google.com/macros/s/AKfycbwwLUGq9BpJCIpZxVVvrtJi6L-cJM9Dy2bb-ZqDGuMOY5Vwd9K0UmFiT2yaxmmRSYk/exec";
+      "https://script.google.com/macros/s/AKfycbzCe4DT3w5rIZd7GnBrw0iLnhmAS1rUBUiVI6yuvFlz3PZy77hb9pYGkODcNeuYMpbc/exec";
 
     try {
       const response = await fetch(url, {
