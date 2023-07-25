@@ -110,37 +110,16 @@ Personal affairs, missing family members, and matrimonial investigations. Afford
       </div>
       <div className="event-card">
         <div className="cd-1">
-          <li>THe Moose</li>
-          <li>Beer Garden</li>
-          <li>Parkway Social</li>
-          <li>Sky Bar</li>
-          <li>Dragon Fly</li>
-          <li>Mansion</li>
-          <li>Lounge 33</li>
-          <li>Bad & Boujee</li>
+          <li>Famous Musicians</li>
+          <li>Famous Bands</li>
         </div>
         <div className="cd-2">
-          <li>Comic con Toronto</li>
-          <li>Comic con Hamilton</li>
-          <li>420 expo</li>
-          <li>Frightmare</li>
-          <li>Int Gin festival</li>
-          <li>Oktoberfest</li>
-          <li>Riverfest</li>
-          <li>Ancaster fair</li>
-          <li> Comic con Niagara</li>
+          <li>Fairs</li>
+          <li>Concerts</li>
         </div>
         <div className="cd-3">
-          <li> Canal day's </li>
-          <li> Festival NHL </li>
-          <li> Canada day festival</li>
-          <li> BTC MMA</li>
-          <li> United MMA </li>
-          <li> 3 Kings Boxing</li>
-          <li>Greycup 2021</li>
-          <li>Winter clasic 2021</li>
-          <li> Canada vs USA</li>
-          <li> World cup</li>
+          <li>Fests</li>
+          <li> Carnivals </li>
         </div>
       </div>
       <div className="risk-sec">
@@ -154,14 +133,14 @@ Personal affairs, missing family members, and matrimonial investigations. Afford
           <div className="detail-l">
             <p>
               {" "}
-              Risk assesment and emergency preventation are indispensable
-              practice for ensuring safty and minimizing the impact of
-              emergencies. by Identifying and analyzing potential risks and
+              Risk assessment and emergency prevention are indispensable
+              practices for ensuring safety and minimizing the impact of
+              emergencies. By identifying and analyzing potential risks and
               hazards, individuals and organizations can implement preventive
               measures that safeguard lives, assets, and the environment.
             </p>
             <p>
-              We focuses on taking proactive measures to reduce the likelihood
+              We focus on taking proactive measures to reduce the likelihood
               of emergencies and minimize their potential impact. it involves
               implementing preventive strategies and measures based on the
               outcomes of risk assessments.
