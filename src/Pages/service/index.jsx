@@ -180,35 +180,25 @@ Personal affairs, missing family members, and matrimonial investigations. Afford
         <div className="img w-full ">
           <img src="../../../image/close-protect.png" alt="" />
         </div>
-        {/* //proteection card starts here  */}
+        {/* //protection card starts here  */}
         <div className="protection-card">
           <div className="p-c-1">
             <h1>Artist</h1>
-            <li>Pink</li>
-            <li>Dark</li>
-            <li>Taylor Swift</li>
-            <li>Shaw Mendez</li>
-            <li>Lil John</li>
-            <li>Swae Lee</li>
+            <li>BodyGuards</li>
+            <li>Close Protection</li>
+            
           </div>
           <div className="p-c-2">
             <h1>bands</h1>
-            <li>Mostley Crue</li>
-            <li>Slaughter</li>
-            <li>Fire House</li>
-            <li>FleetWood Mac</li>
-            <li>Kiss</li>
+            <li>Musicians</li>
+            <li>Artists</li>
+            
           </div>
           <div className="p-c-3">
             <h1>movie/tv</h1>
-            <li>Jersey Shore</li>
-            <li>Johnny Depp</li>
-            <li>Bruce Campbell</li>
-            <li>Denzel Washington</li>
-            <li>Margo Robbie</li>
-            <li>Jeff Goldboom</li>
-            <li>John Travolta</li>
-            <li>Lou Frigno</li>
+            <li>Actors</li>
+            <li>Actresses</li>
+            
           </div>
         </div>
       </div>
