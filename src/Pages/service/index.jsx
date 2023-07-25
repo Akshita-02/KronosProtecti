@@ -110,8 +110,8 @@ Personal affairs, missing family members, and matrimonial investigations. Afford
       </div>
       <div className="event-card">
         <div className="cd-1">
-          <li>Famous Musicians</li>
-          <li>Famous Bands</li>
+          <li>Musicians</li>
+          <li>Bands</li>
         </div>
         <div className="cd-2">
           <li>Fairs</li>
