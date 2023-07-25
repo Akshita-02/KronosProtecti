@@ -55,7 +55,7 @@ const ContactUs = () => {
     const stringed = JSON.stringify(data);
 
     const url =
-      "https://script.google.com/macros/s/AKfycby9I2XKHSDYPfDF_z5Gxqj5yA8HVpUnh1sgLUHOS5s1h-BYttOC_LD7Fb7_oXntTRnO/exec";
+      "https://script.google.com/macros/s/AKfycbwwLUGq9BpJCIpZxVVvrtJi6L-cJM9Dy2bb-ZqDGuMOY5Vwd9K0UmFiT2yaxmmRSYk/exec";
 
     try {
       const response = await fetch(url, {
@@ -68,11 +68,11 @@ const ContactUs = () => {
         setData({
           FirstName: "",
           LastName: "",
-          Email:"",
-          Message:"",
+          Email: "",
+          Message: "",
         });
         const responseData = await response.text();
-        //////console.log("Rate JSON:", responseData);
+        //console.log("Response JSON:", responseData);
       } else {
         //console.log("Failed to send data.");
       }
@@ -80,14 +80,14 @@ const ContactUs = () => {
       //console.error("Error while sending data:", error);
     }
   };
-  
+
   const handleRateSubmit = async (event) => {
     event.preventDefault();
     //console.log(rateData);
     const stringed = JSON.stringify(rateData);
 
     const url =
-      "https://script.google.com/macros/s/AKfycby9I2XKHSDYPfDF_z5Gxqj5yA8HVpUnh1sgLUHOS5s1h-BYttOC_LD7Fb7_oXntTRnO/exec";
+      "https://script.google.com/macros/s/AKfycbwwLUGq9BpJCIpZxVVvrtJi6L-cJM9Dy2bb-ZqDGuMOY5Vwd9K0UmFiT2yaxmmRSYk/exec";
 
     try {
       const response = await fetch(url, {
@@ -134,7 +134,7 @@ const ContactUs = () => {
               <SlLocationPin className="text-[2rem] font-bold" />
               <div className="flex-col md:w-[80%] w-[100%] ">
                 <h2 className="text-2xl">Office</h2>
-                <p>101 Shoreview Pl, Hamilton, ON L8E 0K2, Canada</p>
+                <p>xyz@street.com</p>
               </div>
             </div>
           </div>
