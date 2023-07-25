@@ -134,7 +134,7 @@ const ContactUs = () => {
               <SlLocationPin className="text-[2rem] font-bold" />
               <div className="flex-col md:w-[80%] w-[100%] ">
                 <h2 className="text-2xl">Office</h2>
-                <p>xyz@street.com</p>
+                <p>101 Shoreview Pl, Hamilton, ON L8E 0K2, Canada</p>
               </div>
             </div>
           </div>
