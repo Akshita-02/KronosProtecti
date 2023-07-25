@@ -83,7 +83,7 @@ const ContactUs = () => {
 
   const handleRateSubmit = async (event) => {
     event.preventDefault();
-    //console.log(rateData);
+    console.log(rateData);
     const stringed = JSON.stringify(rateData);
 
     const url =
