@@ -255,7 +255,7 @@ const ContactUs = () => {
           <p>
             {" "}
             To get in touch with us, please fill out the form, and one of our
-            representatives will contact you shortly:
+            representatives will contact you soon:
           </p>
         </div>
       </div>
