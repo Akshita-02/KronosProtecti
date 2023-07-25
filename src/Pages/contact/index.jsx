@@ -65,7 +65,7 @@ const ContactUs = () => {
 
       if (response.ok) {
         // Read the response body as JSON
-        setRateData({
+        setData({
           FirstName: "",
           LastName: "",
           Email:"",
