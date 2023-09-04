@@ -55,7 +55,7 @@ Personal affairs, missing family members, and matrimonial investigations. Afford
             </div>
             <h3>Events security</h3>
             <p>
-             Nsg Security Services have operated events security services at events and venues from small to large scale.
+             Kronos Security Services have operated events security services at events and venues from small to large scale.
             </p>
           </div>
           <div className="service5">
